@@ -1,5 +1,6 @@
 node_modules/
 dist/
-results.json
 yarn-error.log
 .DS_Store
+temp-react-app/
+**/*.tsbuildinfo

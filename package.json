@@ -4,19 +4,29 @@
   "description": "Track AngularJS to React migration progress for Portainer",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:results": "npm run analyze:local && cp results.json public/results.json",
+    "preview": "vite preview",
     "analyze": "tsx analyze.ts",
-    "dev": "tsx watch analyze.ts",
-    "serve": "http-server -p 8080 -o",
-    "start": "yarn analyze local && yarn serve"
+    "analyze:local": "tsx analyze.ts local",
+    "analyze:github": "tsx analyze.ts github"
   },
+  "packageManager": "pnpm@10.17.1",
   "dependencies": {
-    "@octokit/rest": "^21.0.2"
+    "@octokit/rest": "^21.0.2",
+    "@tailwindcss/vite": "^4.1.16",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
-    "http-server": "^14.1.1",
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
   }
 }

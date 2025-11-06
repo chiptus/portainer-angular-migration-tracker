@@ -1,41 +1,48 @@
 # AngularJS Migration Tracker
 
-A standalone tool to track the progress of migrating from AngularJS to React in the Portainer codebase.
+A modern React + TypeScript + Tailwind CSS dashboard to track the progress of migrating from AngularJS to React in the Portainer codebase.
 
 ## Features
 
-- Counts AngularJS components, controllers, services, directives, and other legacy code
-- Supports both local filesystem and GitHub repository analysis
-- Beautiful standalone HTML dashboard to visualize progress
-- TypeScript-based for type safety and maintainability
+- **Modern React Dashboard**: Built with React 19, TypeScript, and Tailwind CSS
+- **Real-time Analytics**: Counts AngularJS components, controllers, services, directives, and other legacy code
+- **Dual Analysis Modes**: Supports both local filesystem and GitHub repository analysis
+- **Beautiful Visualizations**: Interactive progress bars, charts, and statistics
+- **Easy Deployment**: Configured for automatic deployment to GitHub Pages
+- **Auto-refresh**: Dashboard automatically refreshes data every 5 minutes
 
-## Installation
+## Quick Start
+
+### Installation
 
 ```bash
-cd tools/angular-migration-tracker
-yarn install
+npm install
 ```
 
-## Usage
+### Analyze Your Codebase
 
-### Analyze Local Codebase
-
-To analyze the local Portainer codebase:
+To analyze the local Portainer codebase (default path: `../portainer-suite/package/server-ee/app`):
 
 ```bash
-yarn analyze
+npm run analyze
 # or
-yarn analyze local
+npm run analyze:local
 ```
 
-This will scan the `package/server-ee/app` directory and generate `results.json`.
+To analyze a custom directory:
+
+```bash
+npm run analyze local /path/to/your/codebase
+```
+
+This will scan the specified directory and generate `results.json`.
 
 ### Analyze GitHub Repository
 
 To analyze the Portainer repository directly from GitHub:
 
 ```bash
-yarn analyze github
+npm run analyze:github
 ```
 
 This will fetch files from the `portainer/portainer` repository (develop branch) and analyze them.
@@ -43,91 +50,141 @@ This will fetch files from the `portainer/portainer` repository (develop branch)
 **Note:** For authenticated GitHub requests (higher rate limits), set the `GITHUB_TOKEN` environment variable:
 
 ```bash
-GITHUB_TOKEN=your_token_here yarn analyze github
-```
-
-## View the Dashboard
-
-After running the analysis, start the HTTP server to view the dashboard:
-
-```bash
-yarn serve
-```
-
-This will start a local server on port 8080 and automatically open the dashboard in your browser.
-
-**Or run both analysis and server in one command:**
-
-```bash
-yarn start
-```
-
-The dashboard shows:
-- Total AngularJS files remaining
-- Breakdown by component type (controllers, services, directives, etc.)
-- Migration progress visualization
-- Top directories by AngularJS file count
-
-## What It Tracks
-
-The tool identifies and counts:
-
-1. **File Types**
-   - Controller files (`.controller.js`)
-   - Service files (`.service.js`)
-   - Directive files (`.directive.js`)
-
-2. **AngularJS Registrations**
-   - `angular.module().component()`
-   - `angular.module().directive()`
-   - `angular.module().controller()`
-   - `angular.module().service()`
-   - `angular.module().factory()`
-   - `angular.module().filter()`
-
-3. **AngularJS Patterns**
-   - Files with `import angular from 'angular'`
-   - `/* @ngInject */` annotations
-
-## Output
-
-The analysis generates a `results.json` file with:
-
-```json
-{
-  "timestamp": "2025-11-06T...",
-  "source": "local" | "github",
-  "summary": {
-    "totalAngularJSFiles": 150,
-    "controllerFiles": 31,
-    "serviceFiles": 3,
-    ...
-  },
-  "byDirectory": {
-    "portainer/settings/authentication/ldap": 15,
-    ...
-  },
-  "files": [...]
-}
+GITHUB_TOKEN=your_token_here npm run analyze:github
 ```
 
 ## Development
 
-### Build TypeScript
+### Start Development Server
 
 ```bash
-yarn build
+npm run dev
 ```
 
-### Watch Mode
+This will start the Vite development server with hot module replacement. Open [http://localhost:5173](http://localhost:5173) to view the dashboard.
+
+### Build for Production
 
 ```bash
-yarn dev
+npm run build
+```
+
+This creates an optimized production build in the `dist` folder.
+
+### Build with Fresh Analysis
+
+To analyze the codebase and prepare results for building:
+
+```bash
+npm run build:results
+```
+
+This will:
+1. Run the analyzer on the local codebase
+2. Copy the results to the public folder
+
+After running `build:results`, run `npm run build` to create the production bundle with the latest data.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+Preview the production build locally before deploying.
+
+## GitHub Pages Deployment
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+### Setup
+
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Source: GitHub Actions
+
+2. **Push to main branch**:
+   ```bash
+   git add .
+   git commit -m "Deploy React migration tracker"
+   git push origin main
+   ```
+
+3. **Automatic Deployment**: The GitHub Action will automatically build and deploy your site
+
+4. **Access your dashboard** at: `https://[username].github.io/angular-migration-tracker/`
+
+### Manual Deployment
+
+You can also trigger deployment manually from the Actions tab in your GitHub repository.
+
+## Dashboard Overview
+
+The dashboard displays:
+
+- **Stats Cards**: Quick overview of React files, AngularJS files, total files, and component counts
+- **Migration Progress**: Visual progress bar showing percentage of files migrated to React
+- **Component Type Breakdown**: Detailed breakdown of AngularJS component types (controllers, services, directives, etc.)
+- **Top Directories**: List of directories with the most AngularJS files
+
+## What It Tracks
+
+The analyzer identifies and counts:
+
+### File Types
+- Controller files (`.controller.js`)
+- Service files (`.service.js`)
+- Directive files (`.directive.js`)
+- React files (`.tsx`, `.jsx`, or files with React imports)
+
+### AngularJS Registrations
+- `angular.module().component()`
+- `angular.module().directive()`
+- `angular.module().controller()`
+- `angular.module().service()`
+- `angular.module().factory()`
+- `angular.module().filter()`
+
+### AngularJS Patterns
+- Files with `import angular from 'angular'`
+- `/* @ngInject */` annotations
+
+## Project Structure
+
+```
+angular-migration-tracker/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Actions deployment workflow
+├── public/
+│   └── vite.svg               # Favicon
+├── src/
+│   ├── components/            # React components
+│   │   ├── Header.tsx
+│   │   ├── StatsCards.tsx
+│   │   ├── MigrationProgress.tsx
+│   │   ├── ComponentBreakdown.tsx
+│   │   ├── DirectoryList.tsx
+│   │   ├── RefreshButton.tsx
+│   │   ├── LoadingState.tsx
+│   │   └── ErrorState.tsx
+│   ├── App.tsx               # Main application component
+│   ├── main.tsx              # Application entry point
+│   ├── index.css             # Tailwind CSS imports
+│   └── types.ts              # TypeScript type definitions
+├── analyze.ts                # Codebase analysis script
+├── index.html                # HTML entry point
+├── package.json              # Dependencies and scripts
+├── tsconfig.json             # TypeScript configuration
+├── vite.config.ts            # Vite configuration
+└── README.md                 # This file
 ```
 
 ## Configuration
 
-To analyze a different repository or branch, edit the constants in `analyze.ts`:
+### Customize Repository Analysis
+
+To analyze a different repository or branch, edit the constants in [analyze.ts](analyze.ts):
 
 ```typescript
 const GITHUB_OWNER = 'portainer';
@@ -136,29 +193,38 @@ const GITHUB_BRANCH = 'develop';
 const APP_PATH_IN_REPO = 'app';
 ```
 
-## Architecture
+### Customize Base URL
 
-- **analyze.ts** - TypeScript script that scans files and counts AngularJS patterns
-- **index.html** - Standalone HTML dashboard with embedded JavaScript and CSS
-- **results.json** - Generated JSON file with analysis results
-- **package.json** - Dependencies and scripts
-- **tsconfig.json** - TypeScript configuration
+If deploying to a different path, update the `base` in [vite.config.ts](vite.config.ts):
 
-## How It Works
+```typescript
+export default defineConfig({
+  base: '/your-repo-name/',
+  // ...
+})
+```
 
-1. The script walks through all `.js`, `.ts`, and `.tsx` files
-2. For each file, it uses regex patterns to detect AngularJS code
-3. Results are aggregated and saved to `results.json`
-4. The HTML dashboard fetches `results.json` and renders visualizations
+## Technology Stack
 
-## Contributing
+- **React 19**: Modern React with latest features
+- **TypeScript**: Type-safe development
+- **Tailwind CSS 4**: Utility-first CSS with the latest version
+- **Vite 7**: Fast build tool with HMR
+- **GitHub Actions**: Automated CI/CD pipeline
+- **Octokit**: GitHub API integration for remote analysis
+
+## Adding New Metrics
 
 To add new patterns or metrics:
 
-1. Add the pattern to `ANGULARJS_PATTERNS` in `analyze.ts`
-2. Add a counter to the `Summary` interface
-3. Add the matching logic in `analyzeFileContent()`
-4. Update the dashboard in `index.html` to display the new metric
+1. Add the pattern to `ANGULARJS_PATTERNS` in [analyze.ts](analyze.ts:37-49)
+2. Add a counter to the `Summary` interface in [types.ts](src/types.ts:17-31)
+3. Add the matching logic in `analyzeFileContent()` in [analyze.ts](analyze.ts:120-248)
+4. Update the dashboard components to display the new metric
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 

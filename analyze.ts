@@ -402,6 +402,7 @@ function printSummary(): void {
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const mode = args[0] || 'local';
+  const customPath = args[1]; // Optional custom path argument
 
   console.log('AngularJS Migration Tracker\n');
   console.log('============================\n');
@@ -412,7 +413,9 @@ async function main(): Promise<void> {
       await analyzeGitHubRepo();
     } else {
       results.source = 'local';
-      const localPath = join(process.cwd(), '../../package/server-ee/app');
+      // Use custom path if provided, otherwise use default
+      const defaultPath = join(process.cwd(), '../portainer-suite/package/server-ee/app');
+      const localPath = customPath || defaultPath;
       analyzeLocal(localPath);
     }
 
