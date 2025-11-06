@@ -1,0 +1,22 @@
+{
+  "name": "angular-migration-tracker",
+  "version": "1.0.0",
+  "description": "Track AngularJS to React migration progress for Portainer",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "analyze": "tsx analyze.ts",
+    "dev": "tsx watch analyze.ts",
+    "serve": "http-server -p 8080 -o",
+    "start": "yarn analyze local && yarn serve"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "http-server": "^14.1.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
