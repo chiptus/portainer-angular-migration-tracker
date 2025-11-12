@@ -33,8 +33,7 @@ export default function MigrationProgress({ summary }: MigrationProgressProps) {
         remaining
       </p>
       <p className="mt-2 text-center text-sm text-gray-500">
-        {summary.totalReactFiles} React components |{" "}
-        {summary.totalAngularJSFiles} AngularJS JS files
+        ~{summary.totalReactFiles} React components
       </p>
     </div>
   );
