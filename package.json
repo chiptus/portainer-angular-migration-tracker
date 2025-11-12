@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:results": "npm run analyze:local && cp results.json public/results.json",
+    "build:results": "npm run analyze:local && mv results.json public/results.json",
     "preview": "vite preview",
     "analyze": "tsx analyze.ts",
     "analyze:local": "tsx analyze.ts local",
