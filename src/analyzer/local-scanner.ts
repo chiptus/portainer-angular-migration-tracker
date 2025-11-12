@@ -7,6 +7,7 @@ import { join } from 'path';
 import type { Results } from '../types.js';
 import { analyzeFileContent } from './file-analyzer.js';
 import { EXCLUDED_DIRECTORIES, FILE_EXTENSIONS } from './config.js';
+import { getMostChangedHtmlFiles } from './git-history.js';
 
 /**
  * Recursively walks through directory and analyzes files
@@ -42,4 +43,8 @@ export function analyzeLocal(appPath: string, results: Results): void {
   }
 
   walkDirectory(appPath, appPath, results);
+
+  // Get most changed HTML files from git history
+  console.log('Analyzing git history for most changed HTML files...');
+  results.mostChangedHtmlFiles = getMostChangedHtmlFiles(appPath, 20);
 }

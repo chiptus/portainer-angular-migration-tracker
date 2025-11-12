@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-12T12:58:24.313Z",
+  "timestamp": "2025-11-12T13:35:42.254Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 160,
@@ -3226,6 +3226,84 @@
       "patterns": {
         "angularImport": true
       }
+    }
+  ],
+  "mostChangedHtmlFiles": [
+    {
+      "path": "package/server-ee/app/kubernetes/views/deploy/deploy.html",
+      "commitCount": 11
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/stacks/edit/stack.html",
+      "commitCount": 8
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/stacks/create/createstack.html",
+      "commitCount": 5
+    },
+    {
+      "path": "package/server-ee/app/index.html",
+      "commitCount": 5
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/init/admin/initAdmin.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/portainer/registry-management/views/repositories/template.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/code-editor/code-editor.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/cluster/cluster.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/components/helm/helm-templates/helm-templates.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/components/helm/helm-templates/helm-templates-list/helm-templates-list.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/internal-auth/internal-auth.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/auth/auth.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/settings/authentication/ldap/ad-settings/ad-settings.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/multiRegistrySelect/multi-registry-select.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/form-components/web-editor-form/web-editor-form.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/custom-template-selector/custom-template-selector.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/resource-pools/edit/resourcePool.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/resource-pools/access/resourcePoolAccess.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/configurations/secret/edit/secret.html",
+      "commitCount": 2
     }
   ]
 }

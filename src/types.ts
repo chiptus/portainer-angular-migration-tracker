@@ -34,10 +34,16 @@ export interface Summary {
   filesWithAngularImport: number;
 }
 
+export interface HtmlFileChange {
+  path: string;
+  commitCount: number;
+}
+
 export interface Results {
   timestamp: string;
   source: 'local' | 'github';
   summary: Summary;
   byDirectory: Record<string, number>;
   files: FileData[];
+  mostChangedHtmlFiles?: HtmlFileChange[];
 }

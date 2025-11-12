@@ -30,6 +30,7 @@ export function createResults(source: 'local' | 'github'): Results {
     },
     byDirectory: {},
     files: [],
+    mostChangedHtmlFiles: undefined,
   };
 }
 

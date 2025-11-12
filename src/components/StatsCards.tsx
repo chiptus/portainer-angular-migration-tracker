@@ -1,28 +1,22 @@
-import { Summary } from '../types'
+import { Summary } from "../types";
 
 interface StatsCardsProps {
-  summary: Summary
+  summary: Summary;
 }
 
 export default function StatsCards({ summary }: StatsCardsProps) {
-  const totalComponents =
-    summary.componentRegistrations +
-    summary.directiveRegistrations +
-    summary.controllerRegistrations +
-    summary.serviceRegistrations +
-    summary.factoryRegistrations +
-    summary.filterRegistrations
-
-  const totalFiles = summary.totalAngularJSFiles + summary.totalReactFiles
-
   const cards = [
-    { title: 'React Files', value: summary.totalReactFiles, highlight: true },
-    { title: 'AngularJS Files', value: summary.totalAngularJSFiles, highlight: true },
-    { title: 'Total Files', value: totalFiles, highlight: false },
-    { title: 'Total Components', value: totalComponents, highlight: false },
-    { title: 'Controller Files', value: summary.controllerFiles, highlight: false },
-    { title: 'Service Files', value: summary.serviceFiles, highlight: false },
-  ]
+    {
+      title: "AngularJS Templates",
+      value: summary.totalAngularJSTemplates,
+      highlight: true,
+    },
+    {
+      title: "React Components",
+      value: summary.totalReactFiles,
+      highlight: true,
+    },
+  ];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -37,8 +31,8 @@ export default function StatsCards({ summary }: StatsCardsProps) {
           <div
             className={`font-bold ${
               card.highlight
-                ? 'text-5xl text-purple-700'
-                : 'text-4xl text-indigo-600'
+                ? "text-5xl text-purple-700"
+                : "text-4xl text-indigo-600"
             }`}
           >
             {card.value}
@@ -46,5 +40,5 @@ export default function StatsCards({ summary }: StatsCardsProps) {
         </div>
       ))}
     </div>
-  )
+  );
 }
