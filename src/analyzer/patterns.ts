@@ -3,6 +3,7 @@
  */
 
 export interface AngularJSPatterns {
+  htmlTemplate: RegExp;
   controllers: RegExp;
   services: RegExp;
   directives: RegExp;
@@ -17,6 +18,7 @@ export interface AngularJSPatterns {
 }
 
 export const ANGULARJS_PATTERNS: AngularJSPatterns = {
+  htmlTemplate: /\.html$/,
   controllers: /\.controller\.js$/,
   services: /\.service\.js$/,
   directives: /\.directive\.js$/,
@@ -34,5 +36,5 @@ export const REACT_PATTERNS = {
   fileExtension: /\.(tsx|jsx)$/,
   reactImport: /import\s+.*\s+from\s+['"]react['"]/,
   reactExport: /export\s+(default\s+)?(function|const)/,
-  jsxSyntax: /<[A-Z][A-Za-z0-9]*[\s>\/]/,
+  jsxSyntax: /<[A-Z][A-Za-z0-9]*[\s>/]/,
 } as const;

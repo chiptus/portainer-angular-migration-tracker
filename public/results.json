@@ -1,15 +1,16 @@
 {
-  "timestamp": "2025-11-06T09:40:30.944Z",
+  "timestamp": "2025-11-12T12:58:24.313Z",
   "source": "local",
   "summary": {
-    "totalAngularJSFiles": 463,
-    "totalReactFiles": 1664,
+    "totalAngularJSTemplates": 160,
+    "totalAngularJSFiles": 461,
+    "totalReactFiles": 1683,
     "controllerFiles": 32,
     "serviceFiles": 3,
     "directiveFiles": 0,
-    "componentRegistrations": 65,
+    "componentRegistrations": 64,
     "directiveRegistrations": 11,
-    "controllerRegistrations": 75,
+    "controllerRegistrations": 74,
     "serviceRegistrations": 29,
     "factoryRegistrations": 121,
     "filterRegistrations": 3,
@@ -143,7 +144,6 @@
     "portainer/components/product-list": 1,
     "portainer/components/registry-details": 1,
     "portainer/components/slider": 2,
-    "portainer/components/stack-duplication-form": 2,
     "portainer/components/theme": 2,
     "portainer/components/time-window-picker": 2,
     "portainer/components/tls-fieldset": 1,
@@ -164,11 +164,11 @@
     "portainer/rbac/rest": 1,
     "portainer/rbac/services": 2,
     "portainer/rbac/views/roles": 1,
-    "portainer/react/components": 11,
+    "portainer/react/components": 12,
     "portainer/react/components/custom-templates": 2,
     "portainer/react": 1,
     "portainer/react/views/account": 2,
-    "portainer/react/views": 11,
+    "portainer/react/views": 10,
     "portainer/registry-management": 1,
     "portainer/registry-management/rest": 1,
     "portainer/registry-management/services": 2,
@@ -2028,18 +2028,6 @@
       }
     },
     {
-      "path": "portainer/components/stack-duplication-form/stack-duplication-form-controller.js",
-      "patterns": {
-        "controllers": 1
-      }
-    },
-    {
-      "path": "portainer/components/stack-duplication-form/stack-duplication-form.js",
-      "patterns": {
-        "components": 1
-      }
-    },
-    {
       "path": "portainer/components/template-widget.js",
       "patterns": {
         "directives": 1
@@ -2356,6 +2344,12 @@
       }
     },
     {
+      "path": "portainer/react/components/stacks.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
       "path": "portainer/react/components/users.ts",
       "patterns": {
         "angularImport": true
@@ -2405,12 +2399,6 @@
     },
     {
       "path": "portainer/react/views/sidebar.ts",
-      "patterns": {
-        "angularImport": true
-      }
-    },
-    {
-      "path": "portainer/react/views/stack-redeploy-git-form.ts",
       "patterns": {
         "angularImport": true
       }

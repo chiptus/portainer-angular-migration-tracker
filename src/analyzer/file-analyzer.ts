@@ -19,6 +19,12 @@ export function analyzeFileContent(
   const relativePath = baseDir ? relative(baseDir, filePath) : filePath;
   const directory = dirname(relativePath);
 
+  // Check if it's an HTML template file
+  if (ANGULARJS_PATTERNS.htmlTemplate.test(filePath)) {
+    results.summary.totalAngularJSTemplates++;
+    return; // HTML templates don't need further analysis
+  }
+
   let isAngularFile = false;
   let isReactFile = false;
   const fileData: FileData = {

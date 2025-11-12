@@ -18,6 +18,7 @@ export interface FileData {
 }
 
 export interface Summary {
+  totalAngularJSTemplates: number;
   totalAngularJSFiles: number;
   totalReactFiles: number;
   controllerFiles: number;

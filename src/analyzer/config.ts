@@ -11,4 +11,4 @@ export const GITHUB_CONFIG = {
 
 export const EXCLUDED_DIRECTORIES = ['node_modules', 'dist', 'build'] as const;
 
-export const FILE_EXTENSIONS = ['.js', '.ts', '.tsx'] as const;
+export const FILE_EXTENSIONS = ['.js', '.ts', '.tsx', '.html'] as const;
