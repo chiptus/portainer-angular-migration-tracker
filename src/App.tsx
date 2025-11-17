@@ -10,80 +10,80 @@ import LoadingState from "./components/LoadingState";
 import ErrorState from "./components/ErrorState";
 
 function App() {
-  const [data, setData] = useState<Results | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+	const [data, setData] = useState<Results | null>(null);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState<string | null>(null);
 
-  const loadData = async (forceReload = false) => {
-    if (forceReload) {
-      setLoading(true);
-      setError(null);
-    }
+	const loadData = async (forceReload = false) => {
+		if (forceReload) {
+			setLoading(true);
+			setError(null);
+		}
 
-    try {
-      const response = await fetch("results.json?" + Date.now());
+		try {
+			const response = await fetch("results.json?" + Date.now());
 
-      if (!response.ok) {
-        throw new Error(
-          "Results file not found. Please run the analysis script first."
-        );
-      }
+			if (!response.ok) {
+				throw new Error(
+					"Results file not found. Please run the analysis script first.",
+				);
+			}
 
-      const jsonData = await response.json();
-      setData(jsonData);
-      setError(null);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "An error occurred");
-    } finally {
-      setLoading(false);
-    }
-  };
+			const jsonData = await response.json();
+			setData(jsonData);
+			setError(null);
+		} catch (err) {
+			setError(err instanceof Error ? err.message : "An error occurred");
+		} finally {
+			setLoading(false);
+		}
+	};
 
-  useEffect(() => {
-    loadData();
+	useEffect(() => {
+		loadData();
 
-    // Auto-refresh every 5 minutes
-    // const interval = setInterval(() => loadData(false), 5 * 60 * 1000)
-    // return () => clearInterval(interval)
-  }, []);
+		// Auto-refresh every 5 minutes
+		// const interval = setInterval(() => loadData(false), 5 * 60 * 1000)
+		// return () => clearInterval(interval)
+	}, []);
 
-  return (
-    <div className="min-h-screen bg-gray-50 p-5">
-      <div className="max-w-7xl mx-auto">
-        <Header />
+	return (
+		<div className="min-h-screen bg-gray-50 p-5">
+			<div className="max-w-7xl mx-auto">
+				<Header />
 
-        {loading && <LoadingState />}
+				{loading && <LoadingState />}
 
-        {error && !loading && <ErrorState message={error} />}
+				{error && !loading && <ErrorState message={error} />}
 
-        {data && !loading && (
-          <>
-            <div className="text-center text-gray-900 mb-8 text-sm opacity-60">
-              Last updated:{" "}
-              {new Date(data.timestamp).toLocaleDateString("en-US", {
-                month: "short",
-                day: "numeric",
-                year: "numeric",
-                hour: "numeric",
-                minute: "2-digit",
-                hour12: true,
-              })}
-            </div>
+				{data && !loading && (
+					<>
+						<div className="text-center text-gray-900 mb-8 text-sm opacity-60">
+							Last updated:{" "}
+							{new Date(data.timestamp).toLocaleDateString("en-US", {
+								month: "short",
+								day: "numeric",
+								year: "numeric",
+								hour: "numeric",
+								minute: "2-digit",
+								hour12: true,
+							})}
+						</div>
 
-            <StatsCards summary={data.summary} />
-            <MigrationProgress summary={data.summary} />
-            {data.mostChangedHtmlFiles &&
-              data.mostChangedHtmlFiles.length > 0 && (
-                <MostChangedFiles files={data.mostChangedHtmlFiles} />
-              )}
-            {/* <DirectoryList byDirectory={data.byDirectory} /> */}
-          </>
-        )}
+						<StatsCards summary={data.summary} />
+						<MigrationProgress summary={data.summary} />
+						{data.mostChangedHtmlFiles &&
+							data.mostChangedHtmlFiles.length > 0 && (
+								<MostChangedFiles files={data.mostChangedHtmlFiles} />
+							)}
+						{/* <DirectoryList byDirectory={data.byDirectory} /> */}
+					</>
+				)}
 
-        <RefreshButton onRefresh={() => loadData(true)} />
-      </div>
-    </div>
-  );
+				<RefreshButton onRefresh={() => loadData(true)} />
+			</div>
+		</div>
+	);
 }
 
 export default App;

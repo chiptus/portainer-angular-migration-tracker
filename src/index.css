@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  /* Portainer Brand Color Palette */
-  --color-portainer-50: #f5f0ff;
-  --color-portainer-100: #ede5ff;
-  --color-portainer-200: #d0a0ff;
-  --color-portainer-300: #c080ff;
-  --color-portainer-400: #b060ef;
-  --color-portainer-500: #a060df;
-  --color-portainer-600: #9050cf;
-  --color-portainer-700: #7040af;
-  --color-portainer-800: #503080;
-  --color-portainer-900: #302050;
+	/* Portainer Brand Color Palette */
+	--color-portainer-50: #f5f0ff;
+	--color-portainer-100: #ede5ff;
+	--color-portainer-200: #d0a0ff;
+	--color-portainer-300: #c080ff;
+	--color-portainer-400: #b060ef;
+	--color-portainer-500: #a060df;
+	--color-portainer-600: #9050cf;
+	--color-portainer-700: #7040af;
+	--color-portainer-800: #503080;
+	--color-portainer-900: #302050;
 
-  /* Portainer Grays */
-  --color-gray-50: #fdfdfd;
-  --color-gray-900: #2e2f33;
+	/* Portainer Grays */
+	--color-gray-50: #fdfdfd;
+	--color-gray-900: #2e2f33;
 }

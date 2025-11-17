@@ -80,6 +80,7 @@ npm run build:results
 ```
 
 This will:
+
 1. Run the analyzer on the local codebase
 2. Copy the results to the public folder
 
@@ -104,6 +105,7 @@ This project is configured to automatically deploy to GitHub Pages using GitHub 
    - Source: GitHub Actions
 
 2. **Push to main branch**:
+
    ```bash
    git add .
    git commit -m "Deploy React migration tracker"
@@ -132,12 +134,14 @@ The dashboard displays:
 The analyzer identifies and counts:
 
 ### File Types
+
 - Controller files (`.controller.js`)
 - Service files (`.service.js`)
 - Directive files (`.directive.js`)
 - React files (`.tsx`, `.jsx`, or files with React imports)
 
 ### AngularJS Registrations
+
 - `angular.module().component()`
 - `angular.module().directive()`
 - `angular.module().controller()`
@@ -146,6 +150,7 @@ The analyzer identifies and counts:
 - `angular.module().filter()`
 
 ### AngularJS Patterns
+
 - Files with `import angular from 'angular'`
 - `/* @ngInject */` annotations
 
@@ -189,10 +194,10 @@ angular-migration-tracker/
 To analyze a different repository or branch, edit the constants in [analyze.ts](src/analyzer/analyze.ts):
 
 ```typescript
-const GITHUB_OWNER = 'portainer';
-const GITHUB_REPO = 'portainer';
-const GITHUB_BRANCH = 'develop';
-const APP_PATH_IN_REPO = 'app';
+const GITHUB_OWNER = "portainer";
+const GITHUB_REPO = "portainer";
+const GITHUB_BRANCH = "develop";
+const APP_PATH_IN_REPO = "app";
 ```
 
 ### Customize Base URL
@@ -201,9 +206,9 @@ If deploying to a different path, update the `base` in [vite.config.ts](vite.con
 
 ```typescript
 export default defineConfig({
-  base: '/your-repo-name/',
+  base: "/your-repo-name/"
   // ...
-})
+});
 ```
 
 ## Technology Stack

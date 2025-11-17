@@ -13,38 +13,38 @@ import { getMostChangedHtmlFiles } from "./git-history";
  * Recursively walks through directory and analyzes files
  */
 function walkDirectory(dir: string, baseDir: string, results: Results): void {
-  const files = readdirSync(dir);
+	const files = readdirSync(dir);
 
-  for (const file of files) {
-    const filePath = join(dir, file);
-    const stat = statSync(filePath);
+	for (const file of files) {
+		const filePath = join(dir, file);
+		const stat = statSync(filePath);
 
-    if (stat.isDirectory()) {
-      // Skip excluded directories
-      if (EXCLUDED_DIRECTORIES.includes(file as any)) {
-        continue;
-      }
-      walkDirectory(filePath, baseDir, results);
-    } else if (FILE_EXTENSIONS.some((ext) => file.endsWith(ext))) {
-      const content = readFileSync(filePath, "utf8");
-      analyzeFileContent(content, filePath, results, baseDir);
-    }
-  }
+		if (stat.isDirectory()) {
+			// Skip excluded directories
+			if (EXCLUDED_DIRECTORIES.includes(file as any)) {
+				continue;
+			}
+			walkDirectory(filePath, baseDir, results);
+		} else if (FILE_EXTENSIONS.some((ext) => file.endsWith(ext))) {
+			const content = readFileSync(filePath, "utf8");
+			analyzeFileContent(content, filePath, results, baseDir);
+		}
+	}
 }
 
 /**
  * Analyzes local filesystem directory
  */
 export function analyzeLocal(appPath: string, results: Results): void {
-  console.log(`Scanning local directory: ${appPath}\n`);
+	console.log(`Scanning local directory: ${appPath}\n`);
 
-  if (!existsSync(appPath)) {
-    throw new Error(`Directory not found: ${appPath}`);
-  }
+	if (!existsSync(appPath)) {
+		throw new Error(`Directory not found: ${appPath}`);
+	}
 
-  walkDirectory(appPath, appPath, results);
+	walkDirectory(appPath, appPath, results);
 
-  // Get most changed HTML files from git history
-  console.log("Analyzing git history for most changed HTML files...");
-  results.mostChangedHtmlFiles = getMostChangedHtmlFiles(appPath, 20);
+	// Get most changed HTML files from git history
+	console.log("Analyzing git history for most changed HTML files...");
+	results.mostChangedHtmlFiles = getMostChangedHtmlFiles(appPath, 20);
 }

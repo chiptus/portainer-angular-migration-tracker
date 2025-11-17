@@ -17,6 +17,7 @@ The key architectural decision is that `results.json` acts as the data contract 
 ## Commands
 
 ### Development
+
 ```bash
 pnpm install              # Install dependencies (uses pnpm, configured in package.json)
 npm run dev               # Start Vite dev server at http://localhost:5173
@@ -24,6 +25,7 @@ npm run preview           # Preview production build locally
 ```
 
 ### Analysis
+
 ```bash
 npm run analyze:local                    # Analyze default path: ../portainer-suite/package/server-ee/app
 npm run analyze local /custom/path       # Analyze custom directory
@@ -32,17 +34,20 @@ GITHUB_TOKEN=xxx npm run analyze:github # With GitHub token for higher rate limi
 ```
 
 ### Building
+
 ```bash
 npm run build             # TypeScript compilation + Vite production build → dist/
 npm run build:results     # Run analysis + copy results.json to public/ (then run build separately)
 ```
 
 ### Deployment
+
 Push to `main` branch triggers automated GitHub Actions deployment to GitHub Pages.
 
 ## Core Architecture
 
 ### Data Flow
+
 1. **Analysis Phase**: `src/analyzer/analyze.ts` scans a codebase (local filesystem or GitHub API) using regex patterns to identify AngularJS components vs React components
 2. **Data Contract**: Outputs `results.json` with structured metrics (file counts, pattern matches, directory breakdown)
 3. **Visualization Phase**: React app fetches `results.json` and renders interactive dashboard with progress bars, charts, and statistics
@@ -50,28 +55,33 @@ Push to `main` branch triggers automated GitHub Actions deployment to GitHub Pag
 ### Key Files
 
 **src/analyzer/analyze.ts** (436 lines)
+
 - Pattern detection using regex (e.g., `angular.module().component()`, `*.controller.js`)
 - Two modes: Local filesystem walker OR GitHub API (Octokit)
 - Outputs aggregated metrics to `results.json`
 - Configurable via CLI args: `tsx src/analyzer/analyze.ts [local|github] [optional-path]`
 
 **src/types.ts**
+
 - Shared TypeScript interfaces between src/analyzer/analyze.ts and React app
 - `Results`, `Summary`, `FileData` interfaces define the JSON contract
 - Changing this file requires updates to both analysis and visualization layers
 
 **src/App.tsx**
+
 - Main orchestration component
 - Handles data loading with `fetch('results.json')` + cache-busting
 - Auto-refresh every 5 minutes via `setInterval`
 - Conditional rendering: Loading → Error → Data display
 
 **vite.config.ts**
+
 - Base path: `/angular-migration-tracker/` (for GitHub Pages deployment)
 - Plugins: React + Tailwind CSS
 - Public assets copied from `public/` to `dist/` during build
 
 ### Component Structure
+
 All components are **presentational** (no data fetching) and receive data via props:
 
 - `Header`: Title and subtitle
@@ -85,6 +95,7 @@ All components are **presentational** (no data fetching) and receive data via pr
 ## TypeScript Configuration
 
 Uses **project references** for separation:
+
 - `tsconfig.json`: Root config with references
 - `tsconfig.app.json`: React app compilation (ES2020, React JSX, strict mode)
 - `tsconfig.node.json`: Node.js scripts like vite.config.ts (ES2022)
@@ -96,9 +107,11 @@ All TypeScript is configured to be **strict** - do not disable type checking.
 The analyzer uses regex patterns defined in `ANGULARJS_PATTERNS`:
 
 **File-based detection**:
+
 - `*.controller.js`, `*.service.js`, `*.directive.js` files
 
 **Registration detection** (counts occurrences in file content):
+
 - `angular.module('...').component()`
 - `angular.module('...').controller()`
 - `angular.module('...').service()`
@@ -107,6 +120,7 @@ The analyzer uses regex patterns defined in `ANGULARJS_PATTERNS`:
 - `angular.module('...').filter()`
 
 **React detection** (implicit):
+
 - Files with `.tsx` or `.jsx` extensions
 - Files with `import ... from 'react'` + React component exports
 - JSX syntax in file content
@@ -126,6 +140,7 @@ To track additional patterns:
 ## Deployment Architecture
 
 **GitHub Actions Workflow** (`.github/workflows/deploy.yml`):
+
 - Trigger: Push to `main` or manual dispatch
 - Build job: `npm ci` → `npm run build` → upload artifact
 - Deploy job: Publish to GitHub Pages
@@ -138,26 +153,31 @@ The `build:results` script automates the analyze + copy steps. You still need to
 ## Configuration
 
 ### Analyzing Different Repositories
+
 Edit constants in `src/analyzer/analyze.ts` (lines 17-20):
+
 ```typescript
-const GITHUB_OWNER = 'portainer';
-const GITHUB_REPO = 'portainer';
-const GITHUB_BRANCH = 'develop';
-const APP_PATH_IN_REPO = 'app';
+const GITHUB_OWNER = "portainer";
+const GITHUB_REPO = "portainer";
+const GITHUB_BRANCH = "develop";
+const APP_PATH_IN_REPO = "app";
 ```
 
 ### Changing Deployment Path
+
 Update `base` in `vite.config.ts` to match your GitHub Pages path.
 
 ## Development Workflow
 
 **Local development with real data**:
+
 1. Run `npm run analyze local /path/to/portainer`
 2. Start dev server: `npm run dev`
 3. Dashboard automatically fetches from root `results.json`
 4. Changes to React components hot-reload instantly
 
 **Building for production**:
+
 1. Run `npm run build:results` to analyze and copy to public/ (or manually ensure `public/results.json` has current data)
 2. Run `npm run build` to create production bundle
 3. Test with `npm run preview`
@@ -194,6 +214,7 @@ The React dashboard **only reads** this file - it never writes. The analyzer **o
 ## Testing Changes
 
 Since there are no automated tests, manually verify:
+
 1. Analysis: Run `npm run analyze local <path>` and check `results.json` output
 2. Dashboard: Run `npm run dev` and check all components render correctly
 3. Build: Run `npm run build` and verify `dist/` contains all assets
