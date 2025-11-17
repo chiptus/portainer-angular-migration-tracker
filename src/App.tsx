@@ -48,7 +48,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-indigo-600 to-purple-700 p-5">
+    <div className="min-h-screen bg-gray-50 p-5">
       <div className="max-w-7xl mx-auto">
         <Header />
 
@@ -58,8 +58,16 @@ function App() {
 
         {data && !loading && (
           <>
-            <div className="text-center text-white mb-8 text-sm opacity-80">
-              Last updated: {new Date(data.timestamp).toLocaleString()}
+            <div className="text-center text-gray-900 mb-8 text-sm opacity-60">
+              Last updated:{" "}
+              {new Date(data.timestamp).toLocaleDateString("en-US", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true,
+              })}
             </div>
 
             <StatsCards summary={data.summary} />
