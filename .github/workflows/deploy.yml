@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "0 0 * * *" # Daily at midnight UTC
   workflow_dispatch:
 
 permissions:
@@ -24,13 +22,6 @@ jobs:
       - name: Checkout migration tracker
         uses: actions/checkout@v4
 
-      - name: Clone portainer/portainer
-        uses: actions/checkout@v4
-        with:
-          repository: portainer/portainer
-          path: portainer-repo
-          fetch-depth: 0 # Full git history for change tracking
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
@@ -42,12 +33,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Analyze portainer codebase
-        run: pnpm run analyze local portainer-repo/app
-
-      - name: Copy results to public
-        run: mv results.json public/results.json
 
       - name: Build dashboard
         run: pnpm run build

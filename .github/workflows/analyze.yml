@@ -1,0 +1,55 @@
+name: Analyze Portainer Codebase
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily at midnight UTC
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  contents: write # Need write permission to commit results.json
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout migration tracker
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clone portainer/portainer
+        uses: actions/checkout@v4
+        with:
+          repository: portainer/portainer
+          path: portainer-repo
+          fetch-depth: 0 # Full git history for change tracking
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Analyze portainer codebase
+        run: pnpm run analyze local portainer-repo/app
+
+      - name: Copy results to public
+        run: mv results.json public/results.json
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/results.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update analysis results"
+            git push
+          fi
