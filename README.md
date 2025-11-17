@@ -172,7 +172,9 @@ angular-migration-tracker/
 │   ├── main.tsx              # Application entry point
 │   ├── index.css             # Tailwind CSS imports
 │   └── types.ts              # TypeScript type definitions
-├── analyze.ts                # Codebase analysis script
+├── src/analyzer/
+│   ├── analyze.ts            # Codebase analysis script
+│   └── git-history.ts        # Git history utilities
 ├── index.html                # HTML entry point
 ├── package.json              # Dependencies and scripts
 ├── tsconfig.json             # TypeScript configuration
@@ -184,7 +186,7 @@ angular-migration-tracker/
 
 ### Customize Repository Analysis
 
-To analyze a different repository or branch, edit the constants in [analyze.ts](analyze.ts):
+To analyze a different repository or branch, edit the constants in [analyze.ts](src/analyzer/analyze.ts):
 
 ```typescript
 const GITHUB_OWNER = 'portainer';
@@ -217,9 +219,9 @@ export default defineConfig({
 
 To add new patterns or metrics:
 
-1. Add the pattern to `ANGULARJS_PATTERNS` in [analyze.ts](analyze.ts:37-49)
-2. Add a counter to the `Summary` interface in [types.ts](src/types.ts:17-31)
-3. Add the matching logic in `analyzeFileContent()` in [analyze.ts](analyze.ts:120-248)
+1. Add the pattern to `ANGULARJS_PATTERNS` in [analyze.ts](src/analyzer/analyze.ts)
+2. Add a counter to the `Summary` interface in [types.ts](src/types.ts)
+3. Add the matching logic in `analyzeFileContent()` in [analyze.ts](src/analyzer/analyze.ts)
 4. Update the dashboard components to display the new metric
 
 ## Contributing

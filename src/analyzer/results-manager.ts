@@ -2,13 +2,13 @@
  * Results storage, output, and reporting utilities
  */
 
-import { writeFileSync } from 'fs';
-import type { Results, Summary } from '../types.js';
+import { writeFileSync } from "fs";
+import type { Results, Summary } from "../types";
 
 /**
  * Creates a new empty results object
  */
-export function createResults(source: 'local' | 'github'): Results {
+export function createResults(source: "local" | "github"): Results {
   return {
     timestamp: new Date().toISOString(),
     source,
@@ -45,19 +45,29 @@ export function saveResults(results: Results, outputPath: string): void {
 /**
  * Prints summary to console
  */
-export function printSummary(summary: Summary, byDirectory: Record<string, number>): void {
+export function printSummary(
+  summary: Summary,
+  byDirectory: Record<string, number>
+): void {
   // Baseline from commit b23c0f25e feat(app): introduce react configurations [EE-1809] (#646)
   const BASELINE_ANGULARJS_TEMPLATES = 391;
 
-  const progressPercent = ((1 - summary.totalAngularJSTemplates / BASELINE_ANGULARJS_TEMPLATES) * 100).toFixed(1);
+  const progressPercent = (
+    (1 - summary.totalAngularJSTemplates / BASELINE_ANGULARJS_TEMPLATES) *
+    100
+  ).toFixed(1);
   const remainingTemplates = summary.totalAngularJSTemplates;
 
-  console.log('Analysis Complete!\n');
-  console.log('=== Summary ===');
-  console.log(`Total AngularJS Templates: ${remainingTemplates} / ${BASELINE_ANGULARJS_TEMPLATES} (baseline)`);
+  console.log("Analysis Complete!\n");
+  console.log("=== Summary ===");
+  console.log(
+    `Total AngularJS Templates: ${remainingTemplates} / ${BASELINE_ANGULARJS_TEMPLATES} (baseline)`
+  );
   console.log(`Total AngularJS JS Files: ${summary.totalAngularJSFiles}`);
   console.log(`Total React Files: ${summary.totalReactFiles}`);
-  console.log(`\nMigration Progress: ${progressPercent}% complete (${remainingTemplates} AngularJS templates remaining)`);
+  console.log(
+    `\nMigration Progress: ${progressPercent}% complete (${remainingTemplates} AngularJS templates remaining)`
+  );
 
   console.log(`\n=== AngularJS Breakdown ===`);
   console.log(`Controller Files: ${summary.controllerFiles}`);

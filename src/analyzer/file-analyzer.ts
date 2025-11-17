@@ -2,9 +2,9 @@
  * File content analysis logic for detecting AngularJS and React patterns
  */
 
-import { relative, dirname } from 'path';
-import type { FileData, Results } from '../types.js';
-import { ANGULARJS_PATTERNS, REACT_PATTERNS } from './patterns.js';
+import { relative, dirname } from "path";
+import type { FileData, Results } from "../types";
+import { ANGULARJS_PATTERNS, REACT_PATTERNS } from "./patterns";
 
 /**
  * Analyzes file content for AngularJS and React patterns
@@ -14,7 +14,7 @@ export function analyzeFileContent(
   content: string,
   filePath: string,
   results: Results,
-  baseDir: string = ''
+  baseDir: string = ""
 ): void {
   const relativePath = baseDir ? relative(baseDir, filePath) : filePath;
   const directory = dirname(relativePath);
@@ -38,7 +38,10 @@ export function analyzeFileContent(
   const hasReactExport = REACT_PATTERNS.reactExport.test(content);
   const hasJSXSyntax = REACT_PATTERNS.jsxSyntax.test(content);
 
-  if (isReactFileExtension || (hasReactImport && (hasReactExport || hasJSXSyntax))) {
+  if (
+    isReactFileExtension ||
+    (hasReactImport && (hasReactExport || hasJSXSyntax))
+  ) {
     isReactFile = true;
   }
 
@@ -81,7 +84,9 @@ export function analyzeFileContent(
   }
 
   // Count directive registrations
-  const directiveMatches = content.match(ANGULARJS_PATTERNS.directiveRegistrations);
+  const directiveMatches = content.match(
+    ANGULARJS_PATTERNS.directiveRegistrations
+  );
   if (directiveMatches) {
     const count = directiveMatches.length;
     results.summary.directiveRegistrations += count;
@@ -90,7 +95,9 @@ export function analyzeFileContent(
   }
 
   // Count controller registrations
-  const controllerMatches = content.match(ANGULARJS_PATTERNS.controllerRegistrations);
+  const controllerMatches = content.match(
+    ANGULARJS_PATTERNS.controllerRegistrations
+  );
   if (controllerMatches) {
     const count = controllerMatches.length;
     results.summary.controllerRegistrations += count;

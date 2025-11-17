@@ -2,12 +2,12 @@
  * Local filesystem scanner for analyzing files
  */
 
-import { readFileSync, readdirSync, statSync, existsSync } from 'fs';
-import { join } from 'path';
-import type { Results } from '../types.js';
-import { analyzeFileContent } from './file-analyzer.js';
-import { EXCLUDED_DIRECTORIES, FILE_EXTENSIONS } from './config.js';
-import { getMostChangedHtmlFiles } from './git-history.js';
+import { readFileSync, readdirSync, statSync, existsSync } from "fs";
+import { join } from "path";
+import type { Results } from "../types";
+import { analyzeFileContent } from "./file-analyzer";
+import { EXCLUDED_DIRECTORIES, FILE_EXTENSIONS } from "./config";
+import { getMostChangedHtmlFiles } from "./git-history";
 
 /**
  * Recursively walks through directory and analyzes files
@@ -25,8 +25,8 @@ function walkDirectory(dir: string, baseDir: string, results: Results): void {
         continue;
       }
       walkDirectory(filePath, baseDir, results);
-    } else if (FILE_EXTENSIONS.some(ext => file.endsWith(ext))) {
-      const content = readFileSync(filePath, 'utf8');
+    } else if (FILE_EXTENSIONS.some((ext) => file.endsWith(ext))) {
+      const content = readFileSync(filePath, "utf8");
       analyzeFileContent(content, filePath, results, baseDir);
     }
   }
@@ -45,6 +45,6 @@ export function analyzeLocal(appPath: string, results: Results): void {
   walkDirectory(appPath, appPath, results);
 
   // Get most changed HTML files from git history
-  console.log('Analyzing git history for most changed HTML files...');
+  console.log("Analyzing git history for most changed HTML files...");
   results.mostChangedHtmlFiles = getMostChangedHtmlFiles(appPath, 20);
 }

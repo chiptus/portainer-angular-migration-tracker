@@ -1,0 +1,3313 @@
+{
+  "timestamp": "2025-11-17T15:40:13.393Z",
+  "source": "local",
+  "summary": {
+    "totalAngularJSTemplates": 160,
+    "totalAngularJSFiles": 461,
+    "totalReactFiles": 1688,
+    "controllerFiles": 32,
+    "serviceFiles": 3,
+    "directiveFiles": 0,
+    "componentRegistrations": 64,
+    "directiveRegistrations": 11,
+    "controllerRegistrations": 74,
+    "serviceRegistrations": 29,
+    "factoryRegistrations": 121,
+    "filterRegistrations": 3,
+    "ngInjectAnnotations": 181,
+    "filesWithAngularImport": 191
+  },
+  "byDirectory": {
+    "agent/components/host-browser": 2,
+    "agent/components/node-selector": 2,
+    "agent/components/volume-browser": 2,
+    "agent": 1,
+    "agent/rest": 5,
+    "agent/rest/v1": 2,
+    "agent/services": 4,
+    "angulartics.matomo": 1,
+    ".": 5,
+    "azure": 1,
+    "azure/react/components": 1,
+    "azure/react": 1,
+    "azure/react/views": 1,
+    "docker": 1,
+    "docker/components/container-restart-policy": 2,
+    "docker/components/host-overview": 1,
+    "docker/components/host-view-panels/devices-panel": 1,
+    "docker/components/host-view-panels/disks-panel": 1,
+    "docker/components/host-view-panels/engine-details-panel": 1,
+    "docker/components/host-view-panels/host-details-panel": 1,
+    "docker/components/host-view-panels/node-availability-select": 2,
+    "docker/components/host-view-panels/node-labels-table": 2,
+    "docker/components/host-view-panels/swarm-node-details-panel": 2,
+    "docker/components/imageRegistry": 4,
+    "docker/components/network-macvlan-form": 2,
+    "docker/components/volumesCIFSForm": 1,
+    "docker/components/volumesNFSForm": 1,
+    "docker/helpers": 10,
+    "docker/react/components": 7,
+    "docker/react": 1,
+    "docker/react/views": 4,
+    "docker/services": 14,
+    "docker/views/configs": 1,
+    "docker/views/configs/create": 1,
+    "docker/views/configs/edit": 1,
+    "docker/views/containers/console": 1,
+    "docker/views/containers/edit": 1,
+    "docker/views/containers/stats": 1,
+    "docker/views/docker-features-configuration": 2,
+    "docker/views/host/host-browser-view": 2,
+    "docker/views/host": 2,
+    "docker/views/images/edit": 1,
+    "docker/views/images": 1,
+    "docker/views/images/import": 1,
+    "docker/views/networks/create": 1,
+    "docker/views/networks": 1,
+    "docker/views/nodes/node-browser": 2,
+    "docker/views/nodes/node-details": 2,
+    "docker/views/registries/access": 2,
+    "docker/views/secrets/create": 1,
+    "docker/views/secrets/edit": 1,
+    "docker/views/secrets": 1,
+    "docker/views/services/create": 1,
+    "docker/views/services/edit": 1,
+    "docker/views/services": 1,
+    "docker/views/swarm": 1,
+    "docker/views/swarm/visualizer": 1,
+    "docker/views/tasks/edit": 1,
+    "docker/views/volumes/browse": 1,
+    "docker/views/volumes/create": 1,
+    "docker/views/volumes/edit": 1,
+    "docker/views/volumes": 1,
+    "edge": 1,
+    "edge/react/components": 1,
+    "edge/react": 1,
+    "edge/react/views": 6,
+    "edge/rest": 2,
+    "edge/services": 2,
+    "kubernetes": 1,
+    "kubernetes/components/kubernetes-configuration-data": 2,
+    "kubernetes/components/view-loading": 1,
+    "kubernetes/custom-templates": 1,
+    "kubernetes/endpoint": 2,
+    "kubernetes/filters": 3,
+    "kubernetes/helm": 2,
+    "kubernetes/horizontal-pod-auto-scaler": 2,
+    "kubernetes/ingress": 2,
+    "kubernetes/node": 2,
+    "kubernetes/pod": 1,
+    "kubernetes/react/components": 5,
+    "kubernetes/react": 1,
+    "kubernetes/react/views": 1,
+    "kubernetes/registries": 1,
+    "kubernetes/registries/kube-registry-access-view": 1,
+    "kubernetes/rest": 19,
+    "kubernetes/services": 20,
+    "kubernetes/views/applications/create": 2,
+    "kubernetes/views/applications/stats": 2,
+    "kubernetes/views/cluster/node/stats": 2,
+    "kubernetes/views/configurations/configmap/create": 2,
+    "kubernetes/views/configurations/configmap/edit": 2,
+    "kubernetes/views/configurations/secret/create": 2,
+    "kubernetes/views/configurations/secret/edit": 2,
+    "kubernetes/views/deploy": 2,
+    "kubernetes/views/security-constraint": 2,
+    "kubernetes/views/stacks/logs": 2,
+    "kubernetes/views/summary": 2,
+    "kubernetes/views/volumes/edit": 2,
+    "kubernetes/views/volumes": 1,
+    "portainer": 1,
+    "portainer/components/BEFeatureIndicator": 1,
+    "portainer/components/BoxSelector": 2,
+    "portainer/components/accessControlForm": 2,
+    "portainer/components/accessManagement": 2,
+    "portainer/components": 7,
+    "portainer/components/code-editor": 3,
+    "portainer/components/custom-template-selector": 2,
+    "portainer/components/date-range-picker": 1,
+    "portainer/components/endpointSecurity": 2,
+    "portainer/components/form-components": 1,
+    "portainer/components/form-components/web-editor-form": 1,
+    "portainer/components/forms/git-form": 5,
+    "portainer/components/forms/group-form": 2,
+    "portainer/components/forms/kubernetes-redeploy-app-git-form": 2,
+    "portainer/components/forms/registry-form-aws-ecr": 1,
+    "portainer/components/forms/registry-form-azure": 1,
+    "portainer/components/forms/registry-form-custom": 1,
+    "portainer/components/forms/registry-form-github": 1,
+    "portainer/components/forms/registry-form-gitlab": 2,
+    "portainer/components/forms/registry-form-proget": 1,
+    "portainer/components/forms/registry-form-quay": 1,
+    "portainer/components/multiRegistrySelect": 2,
+    "portainer/components/product-list/product-item": 1,
+    "portainer/components/product-list": 1,
+    "portainer/components/registry-details": 1,
+    "portainer/components/slider": 2,
+    "portainer/components/theme": 2,
+    "portainer/components/time-window-picker": 2,
+    "portainer/components/tls-fieldset": 1,
+    "portainer/components/widget": 1,
+    "portainer/directives": 2,
+    "portainer/environments": 1,
+    "portainer/feature-flags": 2,
+    "portainer/filters": 1,
+    "portainer/helpers": 7,
+    "portainer/license-management": 2,
+    "portainer/license-management/licenses.view": 2,
+    "portainer/oauth/components/oauth-providers-selector": 2,
+    "portainer/oauth/components/oauth-settings": 2,
+    "portainer/oauth/services/rest": 1,
+    "portainer/rbac/components/access-viewer": 1,
+    "portainer/rbac/directives": 3,
+    "portainer/rbac": 1,
+    "portainer/rbac/rest": 1,
+    "portainer/rbac/services": 2,
+    "portainer/rbac/views/roles": 1,
+    "portainer/react/components": 12,
+    "portainer/react/components/custom-templates": 2,
+    "portainer/react": 1,
+    "portainer/react/views/account": 2,
+    "portainer/react/views": 10,
+    "portainer/registry-management": 1,
+    "portainer/registry-management/rest": 1,
+    "portainer/registry-management/services": 2,
+    "portainer/registry-management/views/configure": 2,
+    "portainer/registry-management/views/create": 2,
+    "portainer/registry-management/views/edit": 2,
+    "portainer/registry-management/views/repositories/tag": 2,
+    "portainer/rest": 19,
+    "portainer/services": 18,
+    "portainer/services/api": 20,
+    "portainer/settings/authentication": 1,
+    "portainer/settings/authentication/ldap/ad-settings": 1,
+    "portainer/settings/authentication/ldap": 3,
+    "portainer/settings/authentication/ldap/ldap-custom-admin-group": 1,
+    "portainer/settings/authentication/ldap/ldap-custom-group-search": 1,
+    "portainer/settings/authentication/ldap/ldap-custom-user-search": 1,
+    "portainer/settings/authentication/ldap/ldap-group-search": 1,
+    "portainer/settings/authentication/ldap/ldap-group-search-item": 1,
+    "portainer/settings/authentication/ldap/ldap-settings": 1,
+    "portainer/settings/authentication/ldap/ldap-settings-custom": 1,
+    "portainer/settings/authentication/ldap/ldap-settings-dn-builder": 1,
+    "portainer/settings/authentication/ldap/ldap-settings-group-dn-builder": 1,
+    "portainer/settings/authentication/ldap/ldap-settings-openldap": 1,
+    "portainer/settings/authentication/ldap/ldap-settings-test-login": 1,
+    "portainer/settings/authentication/ldap/ldap-user-search": 1,
+    "portainer/settings/authentication/ldap/ldap-user-search-item": 1,
+    "portainer/settings/general": 1,
+    "portainer/settings": 1,
+    "portainer/user-activity/auth-logs-view": 2,
+    "portainer/user-activity": 3,
+    "portainer/views/account": 1,
+    "portainer/views/auth": 1,
+    "portainer/views/endpoints/access": 1,
+    "portainer/views/endpoints/edit": 1,
+    "portainer/views/endpoints/kvm": 1,
+    "portainer/views/groups/access": 1,
+    "portainer/views/groups/create": 1,
+    "portainer/views/groups/edit": 1,
+    "portainer/views/init/admin": 1,
+    "portainer/views/init/init-license.view": 2,
+    "portainer/views/internal-auth": 1,
+    "portainer/views/logout": 1,
+    "portainer/views/main": 1,
+    "portainer/views/settings/authentication": 1,
+    "portainer/views/settings/edge-compute": 2,
+    "portainer/views/stacks/create": 1,
+    "portainer/views/stacks/edit": 1,
+    "portainer/views/stacks": 1,
+    "portainer/views/tags": 1,
+    "portainer/views/users/edit": 1,
+    "react/portainer/gitops": 1,
+    "react/portainer/settings/SettingsView": 1,
+    "react/sidebar": 1,
+    "react-tools": 2
+  },
+  "files": [
+    {
+      "path": "agent/components/host-browser/hostBrowserController.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "agent/components/host-browser/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "agent/components/node-selector/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "agent/components/node-selector/nodeSelectorController.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "agent/components/volume-browser/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "agent/components/volume-browser/volumeBrowserController.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "agent/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "agent/rest/agent.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/rest/browse.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/rest/dockerhub.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/rest/host.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/rest/ping.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/rest/v1/agent.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/rest/v1/browse.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/services/agentService.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "agent/services/hostBrowserService.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "agent/services/pingService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1
+      }
+    },
+    {
+      "path": "agent/services/volumeBrowserService.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "angulartics.matomo/index.js",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "app.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "azure/index.ts",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 2
+      }
+    },
+    {
+      "path": "azure/react/components/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "azure/react/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "azure/react/views/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "config.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/__module.js",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/components/container-restart-policy/container-restart-policy-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/components/container-restart-policy/container-restart-policy.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-overview/host-overview.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/devices-panel/devices-panel.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/disks-panel/disks-panel.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/engine-details-panel/engine-details-panel.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/host-details-panel/host-details-panel.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/node-availability-select/node-availability-select-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/node-availability-select/node-availability-select.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/node-labels-table/node-labels-table-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/node-labels-table/node-labels-table.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/swarm-node-details-panel/swarm-node-details-panel-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/components/host-view-panels/swarm-node-details-panel/swarm-node-details-panel.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/imageRegistry/por-image-registry-rate-limits.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/components/imageRegistry/por-image-registry-rate-limits.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/imageRegistry/por-image-registry.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/components/imageRegistry/por-image-registry.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/network-macvlan-form/network-macvlan-form.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/network-macvlan-form/networkMacvlanFormController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/components/volumesCIFSForm/volumesCifsForm.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/components/volumesNFSForm/volumes-nfs-form.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/helpers/configHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/containerHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/imageHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/infoHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/labelHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/nodeHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/secretHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/serviceHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/taskHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/helpers/volumeHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/react/components/containers.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/components/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/components/networks.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/components/services.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/components/swarm.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/components/templates.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/components/volumes.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/views/containers.ts",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/react/views/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/views/services.ts",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/react/views/tasks.ts",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/buildService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/configService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "docker/services/containerService.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/execService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/imageService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/networkService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/nodeService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/pluginService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/secretService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/serviceService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/swarmService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/systemService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/taskService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/services/volumeService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/configs/configsController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/configs/create/createConfigController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/configs/edit/configController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/containers/console/containerConsoleController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/containers/edit/containerController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/containers/stats/containerStatsController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/docker-features-configuration/docker-features-configuration.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/docker-features-configuration/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/views/host/host-browser-view/host-browser-view-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/host/host-browser-view/host-browser-view.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/views/host/host-view-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/host/host-view.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/views/images/edit/imageController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/images/imagesController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/images/import/importImageController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/networks/create/createNetworkController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/networks/networksController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/nodes/node-browser/node-browser-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/nodes/node-browser/node-browser.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/views/nodes/node-details/node-details-view-controller.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/nodes/node-details/node-details-view.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/views/registries/access/registryAccess.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "docker/views/registries/access/registryAccessController.js",
+      "patterns": {
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/secrets/create/createSecretController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/secrets/edit/secretController.js",
+      "patterns": {
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/secrets/secretsController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/services/create/createServiceController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/services/edit/serviceController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/services/servicesController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/swarm/swarmController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/swarm/visualizer/swarmVisualizerController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/tasks/edit/taskController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/volumes/browse/browseVolumeController.js",
+      "patterns": {
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "docker/views/volumes/create/createVolumeController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/volumes/edit/volumeController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "docker/views/volumes/volumesController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "edge/__module.js",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "edge/react/components/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/views/configurations.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/views/edge-stacks.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/views/groups.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/views/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/views/jobs.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/react/views/templates.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "edge/rest/edge-groups.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "edge/rest/edge-stacks.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "edge/services/edge-group.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "edge/services/edge-stack.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/__module.js",
+      "patterns": {
+        "ngInject": 5
+      }
+    },
+    {
+      "path": "kubernetes/components/kubernetes-configuration-data/kubernetesConfigurationData.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/components/kubernetes-configuration-data/kubernetesConfigurationDataController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/components/view-loading/viewLoading.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/custom-templates/index.js",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 3
+      }
+    },
+    {
+      "path": "kubernetes/endpoint/rest.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/endpoint/service.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/filters/configurationFilters.js",
+      "patterns": {
+        "filters": 1
+      }
+    },
+    {
+      "path": "kubernetes/filters/eventFilters.js",
+      "patterns": {
+        "filters": 1
+      }
+    },
+    {
+      "path": "kubernetes/filters/filters.js",
+      "patterns": {
+        "filters": 1
+      }
+    },
+    {
+      "path": "kubernetes/helm/rest.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/helm/service.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/horizontal-pod-auto-scaler/rest.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/horizontal-pod-auto-scaler/service.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/ingress/rest.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/ingress/service.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/node/rest.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/node/service.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/pod/service.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/react/components/applications.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/react/components/clusterManagement.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/react/components/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/react/components/namespaces.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/react/components/registries.tsx",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/react/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/react/views/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/registries/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "kubernetes/registries/kube-registry-access-view/kube-registry-access-view.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/configMap.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/controllerRevision.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/daemonSet.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/deployment.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/endpoint.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/event.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/health.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/namespace.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/nodesLimits.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/opa.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/persistentVolumeClaim.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/pod.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/portainer-namespace.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/replicaSet.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/resourceQuota.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/secret.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/service.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/statefulSet.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/rest/storage.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/applicationService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/configMapService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/configurationService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/controllerRevisionService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/daemonSetService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/deploymentService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/eventService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/healthService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/namespaceService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/nodesLimitsService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/opaService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/persistentVolumeClaimService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/resourcePoolService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/resourceQuotaService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/secretService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/serviceService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/stackService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/statefulSetService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/storageService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/services/volumeService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/applications/create/createApplication.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/applications/create/createApplicationController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/applications/stats/stats.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/applications/stats/statsController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/cluster/node/stats/stats.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/cluster/node/stats/statsController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/configmap/create/createConfigMap.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/configmap/create/createConfigMapController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/configmap/edit/configMap.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/configmap/edit/configMapController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/secret/create/createSecret.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/secret/create/createSecretController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/secret/edit/secret.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/configurations/secret/edit/secretController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/deploy/deploy.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/deploy/deployController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/security-constraint/constraint-controller.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/security-constraint/constraint.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/stacks/logs/logs.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/stacks/logs/logsController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/summary/summary.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/summary/summaryController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/volumes/edit/volume.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/volumes/edit/volumeController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "kubernetes/views/volumes/volumesController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "ng-constants.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/__module.js",
+      "patterns": {
+        "ngInject": 3
+      }
+    },
+    {
+      "path": "portainer/components/BEFeatureIndicator/BEFeatureIndicator.controller.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/BoxSelector/BoxSelectorAngular.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/BoxSelector/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/accessControlForm/por-access-control-form.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/accessControlForm/porAccessControlFormController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/components/accessManagement/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/accessManagement/porAccessManagementController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/autofocus.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/components/buttonSpinner.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/components/code-editor/code-editor.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/code-editor/code-editor.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/code-editor/codeEditorController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/components/cronRule.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/components/custom-template-selector/custom-template-selector.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/custom-template-selector/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/date-range-picker/date-range-picker.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/endpointSecurity/por-endpoint-security.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/endpointSecurity/porEndpointSecurityController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/components/focusIf.js",
+      "patterns": {
+        "angularImport": true,
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/components/form-components/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/form-components/web-editor-form/web-editor-form.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/git-form/git-form-auth-fieldset.controller.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/git-form/git-form-auto-update-fieldset.controller.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/git-form/git-form-ref-field.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/git-form/git-form.controller.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/git-form/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/forms/group-form/group-form.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/group-form/groupFormController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/kubernetes-redeploy-app-git-form/kubernetes-redeploy-app-git-form.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/kubernetes-redeploy-app-git-form/kubernetes-redeploy-app-git-form.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-aws-ecr/registry-form-ecr.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-azure/registry-form-azure.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-custom/registry-form-custom.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-github/registry-form-github.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-gitlab/registry-form-gitlab.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-gitlab/registry-form-gitlab.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-proget/registry-form-proget.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/forms/registry-form-quay/registry-form-quay.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/multiRegistrySelect/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/multiRegistrySelect/multiRegistrySelectController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/onEnterKey.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/components/product-list/product-item/product-item.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/product-list/product-list.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/registry-details/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/slider/slider.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/slider/sliderController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/template-widget.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/components/theme/theme-settings.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/theme/theme-settings.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/time-window-picker/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/components/time-window-picker/time-window-picker.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/components/tls-fieldset/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/components/widget/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/directives/disableDeploymentOption.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/directives/hideDeploymentOption.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/environments/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/feature-flags/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/feature-flags/limited-feature.directive.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/filters/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/helpers/formHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/helpers/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/helpers/networkHelper.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/helpers/resourceControlHelper.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1
+      }
+    },
+    {
+      "path": "portainer/helpers/stackHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/helpers/urlHelper.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/helpers/webhookHelper.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/license-management/index.js",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 2
+      }
+    },
+    {
+      "path": "portainer/license-management/license.service.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/license-management/licenses.view/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/license-management/licenses.view/licenses.view.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/oauth/components/oauth-providers-selector/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/oauth/components/oauth-providers-selector/oauth-provider-selector.controller.js",
+      "patterns": {
+        "controllerFile": true
+      }
+    },
+    {
+      "path": "portainer/oauth/components/oauth-settings/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/oauth/components/oauth-settings/oauth-settings.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/oauth/services/rest/oauth.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/components/access-viewer/access-viewer.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/directives/authorization.js",
+      "patterns": {
+        "directives": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/directives/disable-authorization.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/directives/excludeAuthorization.js",
+      "patterns": {
+        "directives": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/index.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/rest/role.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/services/role.rest.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/services/role.service.js",
+      "patterns": {
+        "serviceFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/rbac/views/roles/roles.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/react/components/access-control.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/account.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/activity-logs.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/custom-templates/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/custom-templates/variables-field.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/react/components/environments.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/git-form.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/licenses.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/rbac.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/registries.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/settings.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/stacks.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/components/users.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/account/git-credentials.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/account/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/activity-logs.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/env-groups.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/registries.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/sidebar.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/teams.ts",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/react/views/templates.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/update-schedules.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/users.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/react/views/wizard.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/registry-management/index.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/rest/manifestJquery.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/services/registryServiceSelector.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/services/registryV2Service.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/configure/controller.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/configure/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/create/createRegistry.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/create/createRegistryController.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/edit/registry.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/edit/registryController.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/repositories/tag/controller.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/registry-management/views/repositories/tag/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/rest/auth.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/backup.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/customTemplate.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/ecr.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/endpoint.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/gitlab.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/group.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/registry.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/resourceControl.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/settings.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/ssl.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/rest/stack.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 2
+      }
+    },
+    {
+      "path": "portainer/rest/support.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/tag.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/team.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/teamMembership.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/template.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/user.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/rest/webhooks.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/angularToReact.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/accessService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/backupService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/customTemplate.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/dockerhubService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/endpointService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/groupService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/services/api/registryService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/resourceControlService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/settingsService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/sslService.js",
+      "patterns": {
+        "angularImport": true,
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/stackService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/statusService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/supportService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/tagService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/teamMembershipService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/teamService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/templateService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/userService.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/api/webhookService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/async.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/authentication.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/chartService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/endpointProvider.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/fileUpload.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/formValidator.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/http-request.helper.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/services/localStorage.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/nameValidator.js",
+      "patterns": {
+        "angularImport": true,
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/notifications.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/pagination.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/registryEcrService.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/registryGitlabService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/registryModalService.js",
+      "patterns": {
+        "factories": 1
+      }
+    },
+    {
+      "path": "portainer/services/stateManager.js",
+      "patterns": {
+        "factories": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/services/themeManager.js",
+      "patterns": {
+        "services": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ad-settings/ad-settings.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-custom-admin-group/ldap-custom-admin-group.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-custom-group-search/ldap-custom-group-search.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-custom-user-search/ldap-custom-user-search.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-group-search/ldap-group-search.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-group-search-item/ldap-group-search-item.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-settings/ldap-settings.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-settings-custom/ldap-settings-custom.controller.js",
+      "patterns": {
+        "controllerFile": true
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-settings-dn-builder/ldap-settings-dn-builder.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-settings-group-dn-builder/ldap-settings-group-dn-builder.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-settings-openldap/ldap-settings-openldap.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-settings-test-login/ldap-settings-test-login.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-user-search/ldap-user-search.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap-user-search-item/ldap-user-search-item.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap.rest.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/authentication/ldap/ldap.service.js",
+      "patterns": {
+        "serviceFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/settings/general/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/settings/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/user-activity/auth-logs-view/auth-logs-view.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/user-activity/auth-logs-view/index.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/user-activity/index.js",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/user-activity/user-activity.rest.js",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/user-activity/user-activity.service.js",
+      "patterns": {
+        "serviceFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/account/accountController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/auth/authController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/endpoints/access/endpointAccessController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/endpoints/edit/endpointController.js",
+      "patterns": {
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/endpoints/kvm/endpointKVMController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/groups/access/groupAccessController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/groups/create/createGroupController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/groups/edit/groupController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/init/admin/initAdminController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/init/init-license.view/index.js",
+      "patterns": {
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/views/init/init-license.view/init-license.view.controller.js",
+      "patterns": {
+        "controllerFile": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/internal-auth/internalAuthController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/logout/logoutController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/main/mainController.js",
+      "patterns": {
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/settings/authentication/settingsAuthenticationController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/settings/edge-compute/index.js",
+      "patterns": {
+        "angularImport": true,
+        "components": 1
+      }
+    },
+    {
+      "path": "portainer/views/settings/edge-compute/settingsEdgeComputeController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/stacks/create/createStackController.js",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "portainer/views/stacks/edit/stackController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/stacks/stacksController.js",
+      "patterns": {
+        "controllers": 1,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "portainer/views/tags/tagsController.js",
+      "patterns": {
+        "angularImport": true,
+        "controllers": 1
+      }
+    },
+    {
+      "path": "portainer/views/users/edit/userController.js",
+      "patterns": {
+        "controllers": 1
+      }
+    },
+    {
+      "path": "react/portainer/gitops/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "react/portainer/settings/SettingsView/SettingsView.tsx",
+      "patterns": {
+        "angularImport": true,
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "react/sidebar/useSidebarState.tsx",
+      "patterns": {
+        "ngInject": 2
+      }
+    },
+    {
+      "path": "react-tools/react2angular.tsx",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "react-tools/withFormValidation.ts",
+      "patterns": {
+        "ngInject": 1
+      }
+    },
+    {
+      "path": "vendors.js",
+      "patterns": {
+        "angularImport": true
+      }
+    }
+  ],
+  "mostChangedHtmlFiles": [
+    {
+      "path": "package/server-ee/app/kubernetes/views/deploy/deploy.html",
+      "commitCount": 11
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/stacks/edit/stack.html",
+      "commitCount": 9
+    },
+    {
+      "path": "package/server-ee/app/index.html",
+      "commitCount": 6
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/stacks/create/createstack.html",
+      "commitCount": 5
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/init/admin/initAdmin.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/code-editor/code-editor.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/internal-auth/internal-auth.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/auth/auth.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/settings/authentication/ldap/ad-settings/ad-settings.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/multiRegistrySelect/multi-registry-select.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/form-components/web-editor-form/web-editor-form.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/custom-template-selector/custom-template-selector.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/configurations/secret/edit/secret.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/configurations/configmap/edit/configMap.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/applications/create/createApplication.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/logout/logout.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/init/init-license.view/init-license.view.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/settings/authentication/ldap/ldap-connectivity-check/ldap-connectivity-check.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/registry-management/views/edit/registry.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/registry-management/views/create/createRegistry.html",
+      "commitCount": 1
+    }
+  ]
+}

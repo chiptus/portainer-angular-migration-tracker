@@ -2,10 +2,10 @@
  * GitHub repository scanner using Octokit API
  */
 
-import { Octokit } from '@octokit/rest';
-import type { Results } from '../types.js';
-import { analyzeFileContent } from './file-analyzer.js';
-import { GITHUB_CONFIG, FILE_EXTENSIONS } from './config.js';
+import { Octokit } from "@octokit/rest";
+import type { Results } from "../types";
+import { analyzeFileContent } from "./file-analyzer";
+import { GITHUB_CONFIG, FILE_EXTENSIONS } from "./config";
 
 /**
  * Fetches and analyzes files from GitHub repository
@@ -33,15 +33,15 @@ export async function analyzeGitHubRepo(results: Results): Promise<void> {
       owner: GITHUB_CONFIG.OWNER,
       repo: GITHUB_CONFIG.REPO,
       tree_sha: commitSha,
-      recursive: 'true',
+      recursive: "true",
     });
 
     // Filter files in the app directory
     const appFiles = treeData.tree.filter(
       (item) =>
-        item.type === 'blob' &&
+        item.type === "blob" &&
         item.path?.startsWith(GITHUB_CONFIG.APP_PATH) &&
-        FILE_EXTENSIONS.some(ext => item.path?.endsWith(ext))
+        FILE_EXTENSIONS.some((ext) => item.path?.endsWith(ext))
     );
 
     console.log(
@@ -60,7 +60,9 @@ export async function analyzeGitHubRepo(results: Results): Promise<void> {
         });
 
         // Decode base64 content
-        const content = Buffer.from(blobData.content, 'base64').toString('utf8');
+        const content = Buffer.from(blobData.content, "base64").toString(
+          "utf8"
+        );
         analyzeFileContent(content, file.path, results);
 
         processed++;
@@ -74,7 +76,7 @@ export async function analyzeGitHubRepo(results: Results): Promise<void> {
 
     console.log(`\nProcessed ${processed} files from GitHub\n`);
   } catch (error) {
-    console.error('Error fetching from GitHub:', error);
+    console.error("Error fetching from GitHub:", error);
     throw error;
   }
 }

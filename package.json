@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:results": "npm run analyze:local && mv results.json public/results.json",
+    "build:results": "pnpm run analyze:local && mv results.json public/results.json",
     "preview": "vite preview",
-    "analyze": "tsx analyze.ts",
-    "analyze:local": "tsx analyze.ts local",
-    "analyze:github": "tsx analyze.ts github"
+    "analyze": "tsx src/analyzer/analyze.ts",
+    "analyze:local": "tsx src/analyzer/analyze.ts local",
+    "analyze:github": "tsx src/analyzer/analyze.ts github"
   },
   "packageManager": "pnpm@10.17.1",
   "dependencies": {

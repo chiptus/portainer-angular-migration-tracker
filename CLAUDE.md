@@ -9,7 +9,7 @@ This is an **AngularJS to React Migration Tracker** - a two-tier system that ana
 **Architecture Pattern**: Analysis → JSON Contract → Visualization
 
 ```
-analyze.ts (Node.js script)  →  results.json  →  React Dashboard (Vite)
+src/analyzer/analyze.ts (Node.js script)  →  results.json  →  React Dashboard (Vite)
 ```
 
 The key architectural decision is that `results.json` acts as the data contract between the analysis layer and the visualization layer, allowing complete decoupling of concerns.
@@ -43,20 +43,20 @@ Push to `main` branch triggers automated GitHub Actions deployment to GitHub Pag
 ## Core Architecture
 
 ### Data Flow
-1. **Analysis Phase**: `analyze.ts` scans a codebase (local filesystem or GitHub API) using regex patterns to identify AngularJS components vs React components
+1. **Analysis Phase**: `src/analyzer/analyze.ts` scans a codebase (local filesystem or GitHub API) using regex patterns to identify AngularJS components vs React components
 2. **Data Contract**: Outputs `results.json` with structured metrics (file counts, pattern matches, directory breakdown)
 3. **Visualization Phase**: React app fetches `results.json` and renders interactive dashboard with progress bars, charts, and statistics
 
 ### Key Files
 
-**analyze.ts** (436 lines)
+**src/analyzer/analyze.ts** (436 lines)
 - Pattern detection using regex (e.g., `angular.module().component()`, `*.controller.js`)
 - Two modes: Local filesystem walker OR GitHub API (Octokit)
 - Outputs aggregated metrics to `results.json`
-- Configurable via CLI args: `tsx analyze.ts [local|github] [optional-path]`
+- Configurable via CLI args: `tsx src/analyzer/analyze.ts [local|github] [optional-path]`
 
 **src/types.ts**
-- Shared TypeScript interfaces between analyze.ts and React app
+- Shared TypeScript interfaces between src/analyzer/analyze.ts and React app
 - `Results`, `Summary`, `FileData` interfaces define the JSON contract
 - Changing this file requires updates to both analysis and visualization layers
 
@@ -117,9 +117,9 @@ Files marked as both AngularJS and React count as AngularJS (hybrid files are co
 
 To track additional patterns:
 
-1. Add regex pattern to `ANGULARJS_PATTERNS` in `analyze.ts`
+1. Add regex pattern to `ANGULARJS_PATTERNS` in `src/analyzer/analyze.ts`
 2. Add counter field to `Summary` interface in `src/types.ts`
-3. Add matching logic in `analyzeFileContent()` function in `analyze.ts`
+3. Add matching logic in `analyzeFileContent()` function in `src/analyzer/analyze.ts`
 4. Create or update React component to display the new metric
 5. Run `npm run build:results` to regenerate with new data
 
@@ -138,7 +138,7 @@ The `build:results` script automates the analyze + copy steps. You still need to
 ## Configuration
 
 ### Analyzing Different Repositories
-Edit constants in `analyze.ts` (lines 17-20):
+Edit constants in `src/analyzer/analyze.ts` (lines 17-20):
 ```typescript
 const GITHUB_OWNER = 'portainer';
 const GITHUB_REPO = 'portainer';
