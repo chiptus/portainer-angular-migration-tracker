@@ -3,12 +3,13 @@ import { Summary } from "../types";
 interface StatsCardsProps {
 	summary: Summary;
 }
+const BASELINE_ANGULARJS_TEMPLATES = 391;
 
 export default function StatsCards({ summary }: StatsCardsProps) {
 	const cards = [
 		{
 			title: "AngularJS Templates",
-			value: summary.totalAngularJSTemplates,
+			value: `${summary.totalAngularJSTemplates} / ${BASELINE_ANGULARJS_TEMPLATES}`,
 			highlight: true,
 		},
 		{
