@@ -1,20 +1,20 @@
 {
-  "timestamp": "2025-11-25T01:20:53.891Z",
+  "timestamp": "2025-11-26T01:21:08.220Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 159,
+    "totalAngularJSTemplates": 158,
     "totalAngularJSFiles": 435,
-    "totalReactFiles": 1326,
+    "totalReactFiles": 1337,
     "controllerFiles": 30,
     "serviceFiles": 3,
     "directiveFiles": 0,
     "componentRegistrations": 63,
     "directiveRegistrations": 5,
-    "controllerRegistrations": 78,
+    "controllerRegistrations": 77,
     "serviceRegistrations": 29,
     "factoryRegistrations": 113,
     "filterRegistrations": 3,
-    "ngInjectAnnotations": 157,
+    "ngInjectAnnotations": 156,
     "filesWithAngularImport": 178
   },
   "byDirectory": {
@@ -49,9 +49,8 @@
     "docker/helpers": 10,
     "docker/react/components": 7,
     "docker/react": 1,
-    "docker/react/views": 2,
+    "docker/react/views": 3,
     "docker/services": 14,
-    "docker/views/configs": 1,
     "docker/views/configs/create": 1,
     "docker/views/configs/edit": 1,
     "docker/views/containers/console": 1,
@@ -646,6 +645,12 @@
       }
     },
     {
+      "path": "docker/react/views/configs.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
       "path": "docker/react/views/containers.ts",
       "patterns": {
         "angularImport": true,
@@ -753,14 +758,6 @@
       "path": "docker/services/volumeService.js",
       "patterns": {
         "factories": 1,
-        "ngInject": 1
-      }
-    },
-    {
-      "path": "docker/views/configs/configsController.js",
-      "patterns": {
-        "angularImport": true,
-        "controllers": 1,
         "ngInject": 1
       }
     },
@@ -3060,7 +3057,7 @@
     },
     {
       "path": "app/portainer/views/stacks/edit/stack.html",
-      "commitCount": 61
+      "commitCount": 62
     },
     {
       "path": "app/portainer/views/endpoints/edit/endpoint.html",
