@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-12-09T01:22:51.795Z",
+  "timestamp": "2025-12-10T01:24:33.645Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 158,
-    "totalAngularJSFiles": 435,
+    "totalAngularJSFiles": 434,
     "totalReactFiles": 1343,
     "controllerFiles": 30,
     "serviceFiles": 3,
@@ -14,8 +14,8 @@
     "serviceRegistrations": 29,
     "factoryRegistrations": 113,
     "filterRegistrations": 3,
-    "ngInjectAnnotations": 156,
-    "filesWithAngularImport": 178
+    "ngInjectAnnotations": 155,
+    "filesWithAngularImport": 177
   },
   "byDirectory": {
     "agent/components/host-browser": 2,
@@ -25,7 +25,6 @@
     "agent/rest": 5,
     "agent/rest/v1": 2,
     "agent/services": 4,
-    "angulartics.matomo": 1,
     ".": 5,
     "azure": 1,
     "azure/react/components": 1,
@@ -339,13 +338,6 @@
       "patterns": {
         "angularImport": true,
         "factories": 1,
-        "ngInject": 1
-      }
-    },
-    {
-      "path": "angulartics.matomo/index.js",
-      "patterns": {
-        "angularImport": true,
         "ngInject": 1
       }
     },
