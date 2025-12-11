@@ -1,21 +1,21 @@
 {
-  "timestamp": "2025-12-10T01:24:33.645Z",
+  "timestamp": "2025-12-11T01:25:31.037Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 158,
+    "totalAngularJSTemplates": 157,
     "totalAngularJSFiles": 434,
-    "totalReactFiles": 1343,
+    "totalReactFiles": 1355,
     "controllerFiles": 30,
     "serviceFiles": 3,
     "directiveFiles": 0,
     "componentRegistrations": 63,
     "directiveRegistrations": 5,
-    "controllerRegistrations": 77,
+    "controllerRegistrations": 76,
     "serviceRegistrations": 29,
     "factoryRegistrations": 113,
     "filterRegistrations": 3,
     "ngInjectAnnotations": 155,
-    "filesWithAngularImport": 177
+    "filesWithAngularImport": 178
   },
   "byDirectory": {
     "agent/components/host-browser": 2,
@@ -48,7 +48,7 @@
     "docker/helpers": 10,
     "docker/react/components": 7,
     "docker/react": 1,
-    "docker/react/views": 3,
+    "docker/react/views": 4,
     "docker/services": 14,
     "docker/views/configs/create": 1,
     "docker/views/configs/edit": 1,
@@ -60,7 +60,6 @@
     "docker/views/host/host-browser-view": 2,
     "docker/views/host": 2,
     "docker/views/images/edit": 1,
-    "docker/views/images": 1,
     "docker/views/images/import": 1,
     "docker/views/networks/create": 1,
     "docker/views/networks": 1,
@@ -650,6 +649,12 @@
       }
     },
     {
+      "path": "docker/react/views/images.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
       "path": "docker/react/views/index.ts",
       "patterns": {
         "angularImport": true
@@ -831,12 +836,6 @@
     },
     {
       "path": "docker/views/images/edit/imageController.js",
-      "patterns": {
-        "controllers": 1
-      }
-    },
-    {
-      "path": "docker/views/images/imagesController.js",
       "patterns": {
         "controllers": 1
       }
@@ -3108,16 +3107,16 @@
       "commitCount": 24
     },
     {
-      "path": "app/docker/views/images/images.html",
-      "commitCount": 24
-    },
-    {
       "path": "app/kubernetes/views/volumes/edit/volume.html",
       "commitCount": 23
     },
     {
       "path": "app/docker/views/volumes/edit/volume.html",
       "commitCount": 22
+    },
+    {
+      "path": "app/portainer/components/forms/group-form/groupForm.html",
+      "commitCount": 21
     }
   ]
 }
