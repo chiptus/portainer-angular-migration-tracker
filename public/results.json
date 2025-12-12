@@ -1,21 +1,21 @@
 {
-  "timestamp": "2025-12-11T01:25:31.037Z",
+  "timestamp": "2025-12-12T01:25:16.621Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 157,
+    "totalAngularJSTemplates": 156,
     "totalAngularJSFiles": 434,
-    "totalReactFiles": 1355,
+    "totalReactFiles": 1358,
     "controllerFiles": 30,
     "serviceFiles": 3,
     "directiveFiles": 0,
     "componentRegistrations": 63,
     "directiveRegistrations": 5,
-    "controllerRegistrations": 76,
+    "controllerRegistrations": 75,
     "serviceRegistrations": 29,
     "factoryRegistrations": 113,
     "filterRegistrations": 3,
     "ngInjectAnnotations": 155,
-    "filesWithAngularImport": 178
+    "filesWithAngularImport": 179
   },
   "byDirectory": {
     "agent/components/host-browser": 2,
@@ -48,7 +48,7 @@
     "docker/helpers": 10,
     "docker/react/components": 7,
     "docker/react": 1,
-    "docker/react/views": 4,
+    "docker/react/views": 5,
     "docker/services": 14,
     "docker/views/configs/create": 1,
     "docker/views/configs/edit": 1,
@@ -205,7 +205,6 @@
     "portainer/views/settings/authentication": 1,
     "portainer/views/settings/edge-compute": 2,
     "portainer/views/stacks/create": 1,
-    "portainer/views/stacks/edit": 1,
     "portainer/views/stacks": 1,
     "portainer/views/tags": 1,
     "portainer/views/users/edit": 1,
@@ -656,6 +655,12 @@
     },
     {
       "path": "docker/react/views/index.ts",
+      "patterns": {
+        "angularImport": true
+      }
+    },
+    {
+      "path": "docker/react/views/stacks.ts",
       "patterns": {
         "angularImport": true
       }
@@ -2962,12 +2967,6 @@
       }
     },
     {
-      "path": "portainer/views/stacks/edit/stackController.js",
-      "patterns": {
-        "controllers": 1
-      }
-    },
-    {
       "path": "portainer/views/stacks/stacksController.js",
       "patterns": {
         "controllers": 1,
@@ -3047,10 +3046,6 @@
       "commitCount": 65
     },
     {
-      "path": "app/portainer/views/stacks/edit/stack.html",
-      "commitCount": 63
-    },
-    {
       "path": "app/portainer/views/endpoints/edit/endpoint.html",
       "commitCount": 55
     },
@@ -3116,6 +3111,10 @@
     },
     {
       "path": "app/portainer/components/forms/group-form/groupForm.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/portainer/components/accessManagement/porAccessManagement.html",
       "commitCount": 21
     }
   ]
