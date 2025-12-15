@@ -17,6 +17,8 @@ permissions:
 jobs:
   analyze:
     runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check_changes.outputs.has_changes }}
     steps:
       - name: Checkout migration tracker
         uses: actions/checkout@v4
@@ -45,24 +47,38 @@ jobs:
       - name: Analyze portainer codebase
         run: pnpm run analyze local portainer-repo/app
 
+      - name: Copy results to public
+        run: cp results.json public/results.json
+
+      - name: Check for meaningful changes
+        id: check_changes
+        uses: ./.github/actions/check-json-changes
+        with:
+          file-path: public/results.json
+          excluded-fields: timestamp
+
       - name: Upload analysis results as artifact
+        if: steps.check_changes.outputs.has_changes == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: analysis-results
           path: results.json
           retention-days: 90
 
-      - name: Copy results to public
-        run: cp results.json public/results.json
-
       - name: Commit and push results
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add public/results.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update analysis results"
-            git push
-          fi
+          git commit -m "chore: update analysis results"
+          git push
+
+  deploy:
+    needs: analyze
+    if: needs.analyze.outputs.has_changes == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

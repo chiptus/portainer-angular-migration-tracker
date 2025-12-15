@@ -1,0 +1,58 @@
+name: Check for meaningful JSON changes
+description: Compare JSON files excluding specified fields to detect meaningful changes
+
+inputs:
+  file-path:
+    description: 'Path to the JSON file to check'
+    required: true
+  excluded-fields:
+    description: 'Comma-separated list of JSON fields to exclude from comparison (e.g., "timestamp,version")'
+    required: false
+    default: 'timestamp'
+
+outputs:
+  has_changes:
+    description: 'Whether meaningful changes were detected (true/false)'
+    value: ${{ steps.compare.outputs.has_changes }}
+
+runs:
+  using: composite
+  steps:
+    - name: Compare JSON files
+      id: compare
+      shell: bash
+      run: |
+        FILE_PATH="${{ inputs.file-path }}"
+        EXCLUDED_FIELDS="${{ inputs.excluded-fields }}"
+
+        # Build jq delete expression for excluded fields
+        JQ_DELETE=""
+        IFS=',' read -ra FIELDS <<< "$EXCLUDED_FIELDS"
+        for field in "${FIELDS[@]}"; do
+          field=$(echo "$field" | xargs) # trim whitespace
+          if [ -z "$JQ_DELETE" ]; then
+            JQ_DELETE="del(.$field)"
+          else
+            JQ_DELETE="$JQ_DELETE | del(.$field)"
+          fi
+        done
+
+        # Check if file exists in git
+        if git ls-files --error-unmatch "$FILE_PATH" 2>/dev/null; then
+          # Get the committed version and strip out excluded fields
+          git show "HEAD:$FILE_PATH" | jq "$JQ_DELETE" > old-results.json
+          # Strip excluded fields from new file
+          jq "$JQ_DELETE" "$FILE_PATH" > new-results.json
+          # Compare the two files
+          if diff -q old-results.json new-results.json > /dev/null; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No meaningful changes detected (only excluded fields differ)"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Meaningful changes detected"
+          fi
+        else
+          # File doesn't exist yet, so this is a new file
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "New file detected"
+        fi
