@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-12-19T01:25:21.098Z",
+  "timestamp": "2025-12-24T01:24:23.040Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 156,
     "totalAngularJSFiles": 434,
-    "totalReactFiles": 1358,
+    "totalReactFiles": 1357,
     "controllerFiles": 30,
     "serviceFiles": 3,
     "directiveFiles": 0,
@@ -3075,7 +3075,7 @@
     },
     {
       "path": "app/portainer/views/init/admin/initAdmin.html",
-      "commitCount": 30
+      "commitCount": 31
     },
     {
       "path": "app/docker/views/services/edit/service.html",
