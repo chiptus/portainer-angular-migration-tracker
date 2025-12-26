@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-24T01:24:23.040Z",
+  "timestamp": "2025-12-26T01:25:27.681Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 156,
-    "totalAngularJSFiles": 434,
-    "totalReactFiles": 1357,
+    "totalAngularJSTemplates": 155,
+    "totalAngularJSFiles": 432,
+    "totalReactFiles": 1359,
     "controllerFiles": 30,
     "serviceFiles": 3,
     "directiveFiles": 0,
-    "componentRegistrations": 63,
+    "componentRegistrations": 62,
     "directiveRegistrations": 5,
-    "controllerRegistrations": 75,
+    "controllerRegistrations": 74,
     "serviceRegistrations": 29,
     "factoryRegistrations": 113,
     "filterRegistrations": 3,
@@ -31,7 +31,6 @@
     "azure/react": 1,
     "azure/react/views": 1,
     "docker": 1,
-    "docker/components/container-restart-policy": 2,
     "docker/components/host-overview": 1,
     "docker/components/host-view-panels/devices-panel": 1,
     "docker/components/host-view-panels/disks-panel": 1,
@@ -381,18 +380,6 @@
       "patterns": {
         "angularImport": true,
         "ngInject": 1
-      }
-    },
-    {
-      "path": "docker/components/container-restart-policy/container-restart-policy-controller.js",
-      "patterns": {
-        "controllers": 1
-      }
-    },
-    {
-      "path": "docker/components/container-restart-policy/container-restart-policy.js",
-      "patterns": {
-        "components": 1
       }
     },
     {
@@ -3050,11 +3037,11 @@
       "commitCount": 55
     },
     {
-      "path": "app/portainer/views/stacks/create/createstack.html",
-      "commitCount": 54
+      "path": "app/docker/views/containers/edit/container.html",
+      "commitCount": 55
     },
     {
-      "path": "app/docker/views/containers/edit/container.html",
+      "path": "app/portainer/views/stacks/create/createstack.html",
       "commitCount": 54
     },
     {
