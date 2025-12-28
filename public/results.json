@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-12-26T01:25:27.681Z",
+  "timestamp": "2025-12-28T01:43:56.507Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 155,
-    "totalAngularJSFiles": 432,
-    "totalReactFiles": 1359,
+    "totalAngularJSTemplates": 154,
+    "totalAngularJSFiles": 431,
+    "totalReactFiles": 1377,
     "controllerFiles": 30,
     "serviceFiles": 3,
     "directiveFiles": 0,
@@ -15,7 +15,7 @@
     "factoryRegistrations": 113,
     "filterRegistrations": 3,
     "ngInjectAnnotations": 155,
-    "filesWithAngularImport": 179
+    "filesWithAngularImport": 178
   },
   "byDirectory": {
     "agent/components/host-browser": 2,
@@ -203,7 +203,6 @@
     "portainer/views/main": 1,
     "portainer/views/settings/authentication": 1,
     "portainer/views/settings/edge-compute": 2,
-    "portainer/views/stacks/create": 1,
     "portainer/views/stacks": 1,
     "portainer/views/tags": 1,
     "portainer/views/users/edit": 1,
@@ -2948,12 +2947,6 @@
       }
     },
     {
-      "path": "portainer/views/stacks/create/createStackController.js",
-      "patterns": {
-        "angularImport": true
-      }
-    },
-    {
       "path": "portainer/views/stacks/stacksController.js",
       "patterns": {
         "controllers": 1,
@@ -3041,10 +3034,6 @@
       "commitCount": 55
     },
     {
-      "path": "app/portainer/views/stacks/create/createstack.html",
-      "commitCount": 54
-    },
-    {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
       "commitCount": 37
     },
@@ -3102,6 +3091,10 @@
     },
     {
       "path": "app/portainer/components/accessManagement/porAccessManagement.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/docker/components/imageRegistry/por-image-registry.html",
       "commitCount": 21
     }
   ]
