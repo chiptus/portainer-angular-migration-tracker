@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:results": "pnpm run analyze:local && mv results.json public/results.json",
+    "build:results": "pnpm run analyze:local && pnpm run generate:history && mv results.json public/results.json",
     "preview": "vite preview",
     "analyze": "tsx src/analyzer/analyze.ts",
     "analyze:local": "tsx src/analyzer/analyze.ts local",
     "analyze:github": "tsx src/analyzer/analyze.ts github",
+    "generate:history": "tsx src/analyzer/generate-history.ts",
     "typecheck": "tsc -b --noEmit",
     "lint": "oxlint --type-aware \"**/*.{ts,tsx}\"",
     "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\"",
@@ -24,12 +25,14 @@
     "@tailwindcss/vite": "^4.1.16",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "recharts": "^3.6.0",
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
+    "@types/recharts": "^2.0.1",
     "@vitejs/plugin-react": "^5.0.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",

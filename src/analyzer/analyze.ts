@@ -42,7 +42,7 @@ async function main(): Promise<void> {
 			analyzeLocal(localPath, results);
 		}
 
-		printSummary(results.summary, results.byDirectory);
+		printSummary(results.summary, results.byModule);
 
 		const outputPath = join(process.cwd(), "results.json");
 		saveResults(results, outputPath);

@@ -1,0 +1,144 @@
+{
+  "timestamp": "2025-12-31T11:32:49.147Z",
+  "source": "local",
+  "summary": {
+    "totalAngularJSTemplates": 155,
+    "totalReactFiles": 1832
+  },
+  "byModule": {
+    "__mocks__": {
+      "angularJSFiles": 0,
+      "reactFiles": 2
+    },
+    "agent": {
+      "angularJSFiles": 16,
+      "reactFiles": 0
+    },
+    ".": {
+      "angularJSFiles": 3,
+      "reactFiles": 0
+    },
+    "assets": {
+      "angularJSFiles": 0,
+      "reactFiles": 0
+    },
+    "azure": {
+      "angularJSFiles": 2,
+      "reactFiles": 0
+    },
+    "docker": {
+      "angularJSFiles": 68,
+      "reactFiles": 0
+    },
+    "edge": {
+      "angularJSFiles": 8,
+      "reactFiles": 0
+    },
+    "kubernetes": {
+      "angularJSFiles": 73,
+      "reactFiles": 1
+    },
+    "portainer": {
+      "angularJSFiles": 191,
+      "reactFiles": 0
+    },
+    "react": {
+      "angularJSFiles": 3,
+      "reactFiles": 1821
+    },
+    "react-tools": {
+      "angularJSFiles": 2,
+      "reactFiles": 7
+    },
+    "setup-tests": {
+      "angularJSFiles": 0,
+      "reactFiles": 1
+    },
+    "types": {
+      "angularJSFiles": 0,
+      "reactFiles": 0
+    }
+  },
+  "mostChangedHtmlFiles": [
+    {
+      "path": "package/server-ee/app/kubernetes/views/deploy/deploy.html",
+      "commitCount": 11
+    },
+    {
+      "path": "package/server-ee/app/index.html",
+      "commitCount": 6
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/init/admin/initAdmin.html",
+      "commitCount": 5
+    },
+    {
+      "path": "package/server-ee/app/docker/views/containers/edit/container.html",
+      "commitCount": 4
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/code-editor/code-editor.html",
+      "commitCount": 3
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/internal-auth/internal-auth.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/auth/auth.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/settings/authentication/ldap/ad-settings/ad-settings.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/multiRegistrySelect/multi-registry-select.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/form-components/web-editor-form/web-editor-form.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/components/custom-template-selector/custom-template-selector.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/configurations/secret/edit/secret.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/configurations/configmap/edit/configMap.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/views/applications/create/createApplication.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/kubernetes/registries/kube-registry-access-view/kube-registry-access-view.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/docker/views/docker-features-configuration/docker-features-configuration.html",
+      "commitCount": 2
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/logout/logout.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/init/init-license.view/init-license.view.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/groups/access/groupAccess.html",
+      "commitCount": 1
+    },
+    {
+      "path": "package/server-ee/app/portainer/views/endpoints/access/endpointAccess.html",
+      "commitCount": 1
+    }
+  ]
+}

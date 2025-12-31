@@ -6,7 +6,8 @@
       "Bash(mkdir:*)",
       "Bash(pnpm run typecheck:*)",
       "Bash(pnpm run lint:*)",
-      "Bash(pnpm run format:check:*)"
+      "Bash(pnpm run format:check:*)",
+      "Bash(pnpm run generate:history:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
-import { Results } from "./types";
+import { Results, HistoryData } from "./types";
 import Header from "./components/Header";
 import StatsCards from "./components/StatsCards";
 import MigrationProgress from "./components/MigrationProgress";
-// import DirectoryList from "./components/DirectoryList";
+import HistoryChart from "./components/HistoryChart";
+import ModuleBreakdown from "./components/ModuleBreakdown";
 import MostChangedFiles from "./components/MostChangedFiles";
-import RefreshButton from "./components/RefreshButton";
 import LoadingState from "./components/LoadingState";
 import ErrorState from "./components/ErrorState";
 
 function App() {
 	const [data, setData] = useState<Results | null>(null);
+	const [history, setHistory] = useState<HistoryData | null>(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
 
@@ -21,16 +22,25 @@ function App() {
 		}
 
 		try {
-			const response = await fetch("results.json?" + Date.now());
+			const [resultsResponse, historyResponse] = await Promise.all([
+				fetch("results.json?" + Date.now()),
+				fetch("history.json?" + Date.now()),
+			]);
 
-			if (!response.ok) {
+			if (!resultsResponse.ok) {
 				throw new Error(
 					"Results file not found. Please run the analysis script first.",
 				);
 			}
 
-			const jsonData = await response.json();
+			const jsonData = await resultsResponse.json();
 			setData(jsonData);
+
+			if (historyResponse.ok) {
+				const historyData = await historyResponse.json();
+				setHistory(historyData);
+			}
+
 			setError(null);
 		} catch (err) {
 			setError(err instanceof Error ? err.message : "An error occurred");
@@ -72,15 +82,14 @@ function App() {
 
 						<StatsCards summary={data.summary} />
 						<MigrationProgress summary={data.summary} />
+						{history && <HistoryChart history={history} />}
+						{data.byModule && <ModuleBreakdown byModule={data.byModule} />}
 						{data.mostChangedHtmlFiles &&
 							data.mostChangedHtmlFiles.length > 0 && (
 								<MostChangedFiles files={data.mostChangedHtmlFiles} />
 							)}
-						{/* <DirectoryList byDirectory={data.byDirectory} /> */}
 					</>
 				)}
-
-				<RefreshButton onRefresh={() => loadData(true)} />
 			</div>
 		</div>
 	);
