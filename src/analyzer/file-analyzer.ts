@@ -22,6 +22,11 @@ export function analyzeFileContent(
 
 	// Determine module: if path is react/X, use "react/X", otherwise use first part
 	let module: string;
+	const isReactBridge =
+		pathParts.length >= 2 &&
+		pathParts[1] === "react" &&
+		pathParts[0] !== "react";
+
 	if (pathParts[0] === "react" && pathParts.length > 1) {
 		module = `${pathParts[0]}/${pathParts[1]}`; // e.g., "react/portainer"
 	} else {
@@ -78,7 +83,7 @@ export function analyzeFileContent(
 		results.byModule[module].reactFiles++;
 	}
 
-	if (isAngularFile) {
+	if (isAngularFile && !isReactBridge) {
 		results.byModule[module].angularJSFiles++;
 	}
 }

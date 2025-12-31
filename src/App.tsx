@@ -51,13 +51,7 @@ function App() {
 
 	useEffect(() => {
 		loadData();
-
-		// Auto-refresh every 5 minutes
-		// const interval = setInterval(() => loadData(false), 5 * 60 * 1000)
-		// return () => clearInterval(interval)
 	}, []);
-
-	console.log({ data });
 
 	return (
 		<div className="min-h-screen bg-gray-50 p-5">
