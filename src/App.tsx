@@ -57,6 +57,8 @@ function App() {
 		// return () => clearInterval(interval)
 	}, []);
 
+	console.log({ data });
+
 	return (
 		<div className="min-h-screen bg-gray-50 p-5">
 			<div className="max-w-7xl mx-auto">

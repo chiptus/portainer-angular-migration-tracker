@@ -18,7 +18,15 @@ export function analyzeFileContent(
 ): void {
 	const relativePath = baseDir ? relative(baseDir, filePath) : filePath;
 	const directory = dirname(relativePath);
-	const module = directory.split("/")[0] || ".";
+	const pathParts = directory.split("/");
+
+	// Determine module: if path is react/X, use "react/X", otherwise use first part
+	let module: string;
+	if (pathParts[0] === "react" && pathParts.length > 1) {
+		module = `${pathParts[0]}/${pathParts[1]}`; // e.g., "react/portainer"
+	} else {
+		module = pathParts[0] || ".";
+	}
 
 	// Initialize module stats if it doesn't exist
 	if (!results.byModule[module]) {

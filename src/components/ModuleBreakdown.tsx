@@ -4,25 +4,46 @@ interface ModuleBreakdownProps {
 	byModule: Record<string, ModuleStats>;
 }
 
-const MODULE_CONFIG: Record<string, { name: string; order: number }> = {
-	docker: { name: "Docker", order: 1 },
-	kubernetes: { name: "Kubernetes", order: 2 },
-	portainer: { name: "Portainer", order: 3 },
-	edge: { name: "Edge", order: 4 },
-	azure: { name: "Azure", order: 5 },
-	agent: { name: "Agent", order: 6 },
-	react: { name: "React", order: 7 },
-	".": { name: "Root", order: 8 },
+const TARGET_MODULES = [
+	"docker",
+	"kubernetes",
+	"portainer",
+	"edge",
+	"azure",
+	"agent",
+];
+
+const MODULE_DISPLAY_NAMES: Record<string, string> = {
+	docker: "Docker",
+	kubernetes: "Kubernetes",
+	portainer: "Portainer",
+	edge: "Edge",
+	azure: "Azure",
+	agent: "Agent",
 };
 
 export default function ModuleBreakdown({ byModule }: ModuleBreakdownProps) {
-	const sortedModules = Object.entries(byModule)
-		.filter(([_, stats]) => stats.angularJSFiles > 0 || stats.reactFiles > 0)
-		.sort((a, b) => {
-			const orderA = MODULE_CONFIG[a[0]]?.order ?? 999;
-			const orderB = MODULE_CONFIG[b[0]]?.order ?? 999;
-			return orderA - orderB;
-		});
+	console.log({ byModule });
+	const moduleCards = TARGET_MODULES.map((moduleKey) => {
+		// Get AngularJS stats from app/{module}
+		const angularStats = byModule[moduleKey] || {
+			angularJSFiles: 0,
+			reactFiles: 0,
+		};
+
+		// Get React stats from app/react/{module}
+		const reactStats = byModule[`react/${moduleKey}`] || {
+			angularJSFiles: 0,
+			reactFiles: 0,
+		};
+
+		return {
+			name: MODULE_DISPLAY_NAMES[moduleKey],
+			angularJS: angularStats.angularJSFiles,
+			react: reactStats.reactFiles,
+			total: angularStats.angularJSFiles + reactStats.reactFiles,
+		};
+	});
 
 	return (
 		<div className="bg-white rounded-xl p-8 mb-8 shadow-lg border border-gray-200">
@@ -34,31 +55,30 @@ export default function ModuleBreakdown({ byModule }: ModuleBreakdownProps) {
 			</p>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-				{sortedModules.map(([moduleKey, stats]) => {
-					const total = stats.angularJSFiles + stats.reactFiles;
+				{moduleCards.map((module) => {
 					const progressPercent =
-						total > 0 ? (stats.reactFiles / total) * 100 : 0;
+						module.total > 0 ? (module.react / module.total) * 100 : 0;
 
 					return (
 						<div
-							key={moduleKey}
+							key={module.name}
 							className="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow"
 						>
 							<div className="font-bold text-lg mb-3 text-gray-900">
-								{MODULE_CONFIG[moduleKey]?.name || moduleKey}
+								{module.name}
 							</div>
 
 							<div className="space-y-2 mb-3">
 								<div className="flex justify-between text-sm">
 									<span className="text-gray-600">AngularJS:</span>
 									<span className="font-semibold text-red-600">
-										{stats.angularJSFiles}
+										{module.angularJS}
 									</span>
 								</div>
 								<div className="flex justify-between text-sm">
 									<span className="text-gray-600">React:</span>
 									<span className="font-semibold text-teal-600">
-										{stats.reactFiles}
+										{module.react}
 									</span>
 								</div>
 							</div>
