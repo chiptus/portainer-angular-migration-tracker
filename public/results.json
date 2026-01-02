@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-12-31T14:31:49.345Z",
+  "timestamp": "2026-01-02T01:27:28.713Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 154,
-    "totalReactFiles": 1401
+    "totalReactFiles": 1405
   },
   "byModule": {
     "__mocks__": {
@@ -60,7 +60,7 @@
     },
     "react/docker": {
       "angularJSFiles": 0,
-      "reactFiles": 244
+      "reactFiles": 248
     },
     "react/edge": {
       "angularJSFiles": 0,
@@ -110,7 +110,7 @@
     },
     {
       "path": "app/docker/views/containers/edit/container.html",
-      "commitCount": 57
+      "commitCount": 58
     },
     {
       "path": "app/portainer/views/endpoints/edit/endpoint.html",
@@ -145,15 +145,15 @@
       "commitCount": 28
     },
     {
+      "path": "app/index.html",
+      "commitCount": 26
+    },
+    {
       "path": "app/portainer/views/account/account.html",
       "commitCount": 25
     },
     {
       "path": "app/kubernetes/components/kubernetes-configuration-data/kubernetesConfigurationData.html",
-      "commitCount": 25
-    },
-    {
-      "path": "app/index.html",
       "commitCount": 25
     },
     {
