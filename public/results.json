@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-01-10T01:25:29.279Z",
+  "timestamp": "2026-01-11T01:44:59.042Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 153,
+    "totalAngularJSTemplates": 152,
     "totalReactFiles": 1430
   },
   "byModule": {
@@ -27,7 +27,7 @@
       "reactFiles": 0
     },
     "docker": {
-      "angularJSFiles": 61,
+      "angularJSFiles": 60,
       "reactFiles": 0
     },
     "edge": {
@@ -110,11 +110,7 @@
     },
     {
       "path": "app/portainer/views/endpoints/edit/endpoint.html",
-      "commitCount": 60
-    },
-    {
-      "path": "app/docker/views/containers/edit/container.html",
-      "commitCount": 60
+      "commitCount": 61
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
@@ -178,6 +174,10 @@
     },
     {
       "path": "app/docker/components/log-viewer/logViewer.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/docker/components/imageRegistry/por-image-registry.html",
       "commitCount": 21
     }
   ]
