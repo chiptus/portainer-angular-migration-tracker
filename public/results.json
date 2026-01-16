@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-01-13T01:24:31.581Z",
+  "timestamp": "2026-01-16T01:28:32.123Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 152,
-    "totalReactFiles": 1434
+    "totalReactFiles": 1436
   },
   "byModule": {
     "__mocks__": {
@@ -76,7 +76,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 359
+      "reactFiles": 361
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -110,7 +110,7 @@
     },
     {
       "path": "app/portainer/views/endpoints/edit/endpoint.html",
-      "commitCount": 61
+      "commitCount": 62
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
