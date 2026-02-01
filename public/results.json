@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-01-31T01:48:08.677Z",
+  "timestamp": "2026-02-01T02:07:25.143Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 150,
-    "totalReactFiles": 1460
+    "totalAngularJSTemplates": 149,
+    "totalReactFiles": 1462
   },
   "byModule": {
     "__mocks__": {
@@ -39,7 +39,7 @@
       "reactFiles": 0
     },
     "portainer": {
-      "angularJSFiles": 149,
+      "angularJSFiles": 148,
       "reactFiles": 0
     },
     "react/azure": {
@@ -76,7 +76,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 378
+      "reactFiles": 380
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -107,10 +107,6 @@
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
       "commitCount": 65
-    },
-    {
-      "path": "app/portainer/views/endpoints/edit/endpoint.html",
-      "commitCount": 64
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
@@ -179,6 +175,10 @@
     {
       "path": "app/docker/components/imageRegistry/por-image-registry.html",
       "commitCount": 21
+    },
+    {
+      "path": "app/portainer/components/accessControlForm/porAccessControlForm.html",
+      "commitCount": 20
     }
   ]
 }
