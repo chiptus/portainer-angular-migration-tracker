@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-20T01:56:16.190Z",
+  "timestamp": "2026-03-23T02:03:08.354Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 146,
-    "totalReactFiles": 1502
+    "totalReactFiles": 1504
   },
   "byModule": {
     "__mocks__": {
@@ -76,7 +76,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 394
+      "reactFiles": 396
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -106,7 +106,7 @@
   "mostChangedHtmlFiles": [
     {
       "path": "app/kubernetes/views/applications/create/createApplication.html",
-      "commitCount": 123
+      "commitCount": 124
     },
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
