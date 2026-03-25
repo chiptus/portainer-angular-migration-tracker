@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-24T01:54:50.875Z",
+  "timestamp": "2026-03-25T02:00:31.444Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 146,
-    "totalReactFiles": 1510
+    "totalReactFiles": 1508
   },
   "byModule": {
     "__mocks__": {
@@ -60,7 +60,7 @@
     },
     "react/docker": {
       "angularJSFiles": 0,
-      "reactFiles": 267
+      "reactFiles": 265
     },
     "react/edge": {
       "angularJSFiles": 0,
@@ -106,31 +106,31 @@
   "mostChangedHtmlFiles": [
     {
       "path": "app/kubernetes/views/applications/create/createApplication.html",
-      "commitCount": 124
+      "commitCount": 125
     },
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
-      "commitCount": 65
+      "commitCount": 66
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
       "commitCount": 41
     },
     {
+      "path": "app/portainer/views/auth/auth.html",
+      "commitCount": 35
+    },
+    {
       "path": "app/docker/views/images/build/buildimage.html",
       "commitCount": 35
     },
     {
-      "path": "app/portainer/views/auth/auth.html",
-      "commitCount": 34
+      "path": "app/portainer/views/init/admin/initAdmin.html",
+      "commitCount": 32
     },
     {
       "path": "app/docker/views/services/create/createservice.html",
       "commitCount": 32
-    },
-    {
-      "path": "app/portainer/views/init/admin/initAdmin.html",
-      "commitCount": 31
     },
     {
       "path": "app/docker/views/services/edit/service.html",
@@ -153,12 +153,12 @@
       "commitCount": 25
     },
     {
-      "path": "app/docker/views/services/edit/includes/mounts.html",
+      "path": "app/kubernetes/views/volumes/edit/volume.html",
       "commitCount": 24
     },
     {
-      "path": "app/kubernetes/views/volumes/edit/volume.html",
-      "commitCount": 23
+      "path": "app/docker/views/services/edit/includes/mounts.html",
+      "commitCount": 24
     },
     {
       "path": "app/docker/views/volumes/edit/volume.html",
