@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-25T02:00:31.444Z",
+  "timestamp": "2026-03-26T02:06:37.672Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 146,
@@ -106,11 +106,11 @@
   "mostChangedHtmlFiles": [
     {
       "path": "app/kubernetes/views/applications/create/createApplication.html",
-      "commitCount": 125
+      "commitCount": 126
     },
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
-      "commitCount": 66
+      "commitCount": 67
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
@@ -118,7 +118,7 @@
     },
     {
       "path": "app/portainer/views/auth/auth.html",
-      "commitCount": 35
+      "commitCount": 36
     },
     {
       "path": "app/docker/views/images/build/buildimage.html",
@@ -126,7 +126,7 @@
     },
     {
       "path": "app/portainer/views/init/admin/initAdmin.html",
-      "commitCount": 32
+      "commitCount": 33
     },
     {
       "path": "app/docker/views/services/create/createservice.html",
@@ -149,12 +149,12 @@
       "commitCount": 25
     },
     {
-      "path": "app/kubernetes/components/kubernetes-configuration-data/kubernetesConfigurationData.html",
+      "path": "app/kubernetes/views/volumes/edit/volume.html",
       "commitCount": 25
     },
     {
-      "path": "app/kubernetes/views/volumes/edit/volume.html",
-      "commitCount": 24
+      "path": "app/kubernetes/components/kubernetes-configuration-data/kubernetesConfigurationData.html",
+      "commitCount": 25
     },
     {
       "path": "app/docker/views/services/edit/includes/mounts.html",
