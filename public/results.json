@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-03-26T02:06:37.672Z",
+  "timestamp": "2026-03-31T02:08:19.113Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 146,
+    "totalAngularJSTemplates": 145,
     "totalReactFiles": 1508
   },
   "byModule": {
@@ -35,7 +35,7 @@
       "reactFiles": 0
     },
     "kubernetes": {
-      "angularJSFiles": 69,
+      "angularJSFiles": 68,
       "reactFiles": 0
     },
     "portainer": {
