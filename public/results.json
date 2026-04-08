@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-31T02:08:19.113Z",
+  "timestamp": "2026-04-08T02:09:48.973Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 145,
-    "totalReactFiles": 1508
+    "totalAngularJSTemplates": 144,
+    "totalReactFiles": 1513
   },
   "byModule": {
     "__mocks__": {
@@ -39,7 +39,7 @@
       "reactFiles": 0
     },
     "portainer": {
-      "angularJSFiles": 147,
+      "angularJSFiles": 146,
       "reactFiles": 0
     },
     "react/azure": {
@@ -60,7 +60,7 @@
     },
     "react/docker": {
       "angularJSFiles": 0,
-      "reactFiles": 265
+      "reactFiles": 266
     },
     "react/edge": {
       "angularJSFiles": 0,
@@ -76,7 +76,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 396
+      "reactFiles": 400
     },
     "react/sidebar": {
       "angularJSFiles": 1,
