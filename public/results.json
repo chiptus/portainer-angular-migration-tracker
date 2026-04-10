@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-08T02:09:48.973Z",
+  "timestamp": "2026-04-10T02:22:59.799Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 144,
-    "totalReactFiles": 1513
+    "totalReactFiles": 1515
   },
   "byModule": {
     "__mocks__": {
@@ -72,7 +72,7 @@
     },
     "react/kubernetes": {
       "angularJSFiles": 0,
-      "reactFiles": 370
+      "reactFiles": 372
     },
     "react/portainer": {
       "angularJSFiles": 4,
@@ -110,7 +110,7 @@
     },
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
-      "commitCount": 67
+      "commitCount": 68
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
