@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-10T02:22:59.799Z",
+  "timestamp": "2026-04-14T02:24:10.682Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 144,
-    "totalReactFiles": 1515
+    "totalReactFiles": 1518
   },
   "byModule": {
     "__mocks__": {
@@ -52,7 +52,7 @@
     },
     "react/components": {
       "angularJSFiles": 0,
-      "reactFiles": 289
+      "reactFiles": 292
     },
     "react": {
       "angularJSFiles": 0,
@@ -110,7 +110,7 @@
     },
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
-      "commitCount": 68
+      "commitCount": 69
     },
     {
       "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
@@ -118,7 +118,7 @@
     },
     {
       "path": "app/portainer/views/auth/auth.html",
-      "commitCount": 36
+      "commitCount": 37
     },
     {
       "path": "app/docker/views/images/build/buildimage.html",
@@ -126,7 +126,7 @@
     },
     {
       "path": "app/portainer/views/init/admin/initAdmin.html",
-      "commitCount": 33
+      "commitCount": 34
     },
     {
       "path": "app/docker/views/services/create/createservice.html",
@@ -134,7 +134,7 @@
     },
     {
       "path": "app/docker/views/services/edit/service.html",
-      "commitCount": 28
+      "commitCount": 29
     },
     {
       "path": "app/docker/views/images/edit/image.html",
@@ -142,7 +142,7 @@
     },
     {
       "path": "app/index.html",
-      "commitCount": 26
+      "commitCount": 27
     },
     {
       "path": "app/portainer/views/account/account.html",
