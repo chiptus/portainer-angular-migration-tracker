@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-14T02:24:10.682Z",
+  "timestamp": "2026-04-15T02:13:11.850Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 144,
-    "totalReactFiles": 1518
+    "totalReactFiles": 1530
   },
   "byModule": {
     "__mocks__": {
@@ -52,7 +52,7 @@
     },
     "react/components": {
       "angularJSFiles": 0,
-      "reactFiles": 292
+      "reactFiles": 301
     },
     "react": {
       "angularJSFiles": 0,
@@ -72,7 +72,7 @@
     },
     "react/kubernetes": {
       "angularJSFiles": 0,
-      "reactFiles": 372
+      "reactFiles": 375
     },
     "react/portainer": {
       "angularJSFiles": 4,
