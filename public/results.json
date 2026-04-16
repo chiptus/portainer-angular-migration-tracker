@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-15T02:13:11.850Z",
+  "timestamp": "2026-04-16T02:28:54.318Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 144,
-    "totalReactFiles": 1530
+    "totalReactFiles": 1531
   },
   "byModule": {
     "__mocks__": {
@@ -48,7 +48,7 @@
     },
     "react/common": {
       "angularJSFiles": 0,
-      "reactFiles": 1
+      "reactFiles": 8
     },
     "react/components": {
       "angularJSFiles": 0,
@@ -60,7 +60,7 @@
     },
     "react/docker": {
       "angularJSFiles": 0,
-      "reactFiles": 266
+      "reactFiles": 261
     },
     "react/edge": {
       "angularJSFiles": 0,
@@ -76,7 +76,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 400
+      "reactFiles": 399
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -106,7 +106,7 @@
   "mostChangedHtmlFiles": [
     {
       "path": "app/kubernetes/views/applications/create/createApplication.html",
-      "commitCount": 126
+      "commitCount": 127
     },
     {
       "path": "app/kubernetes/views/deploy/deploy.html",
