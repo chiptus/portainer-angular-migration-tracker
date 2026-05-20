@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       has_changes: ${{ steps.check_changes.outputs.has_changes }}
+      pushed_sha: ${{ steps.pushed_sha.outputs.sha }}
     steps:
       - name: Checkout migration tracker
         uses: actions/checkout@v4
@@ -77,10 +78,17 @@ jobs:
           git commit -m "chore: update analysis results"
           git push
 
+      - name: Capture pushed SHA
+        id: pushed_sha
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
   deploy:
     needs: analyze
     if: needs.analyze.outputs.has_changes == 'true'
     uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ needs.analyze.outputs.pushed_sha }}
     permissions:
       contents: read
       pages: write

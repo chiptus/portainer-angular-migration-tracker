@@ -5,6 +5,11 @@ on:
     branches:
       - main
   workflow_call:
+    inputs:
+      ref:
+        type: string
+        required: false
+        default: ""
   workflow_dispatch:
 
 permissions:
@@ -22,6 +27,8 @@ jobs:
     steps:
       - name: Checkout migration tracker
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -46,6 +53,8 @@ jobs:
 
       - name: Build dashboard
         run: pnpm run build
+        env:
+          VITE_COMMIT_HASH: ${{ inputs.ref || github.sha }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

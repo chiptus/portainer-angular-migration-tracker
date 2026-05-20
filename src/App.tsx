@@ -55,7 +55,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className="min-h-screen bg-gray-50 p-5">
+		<div className="min-h-screen bg-gray-50 p-5 pb-10">
 			<div className="max-w-7xl mx-auto">
 				<Header />
 
@@ -89,6 +89,13 @@ function App() {
 					</>
 				)}
 			</div>
+
+			<footer className="mt-10 text-center text-xs text-gray-400">
+				build{" "}
+				<span className="font-mono">
+					{(import.meta.env.VITE_COMMIT_HASH ?? "dev").slice(0, 7)}
+				</span>
+			</footer>
 		</div>
 	);
 }
