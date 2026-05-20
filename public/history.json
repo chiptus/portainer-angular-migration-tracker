@@ -1,0 +1,1021 @@
+{
+  "version": "1.0",
+  "generated": "2026-05-20T12:53:06.633Z",
+  "baseline": 391,
+  "snapshots": [
+    {
+      "timestamp": "2022-05-22T08:34:09+03:00",
+      "angularJSTemplates": 353,
+      "reactFiles": 263,
+      "angularJSLines": 39612
+    },
+    {
+      "timestamp": "2022-05-29T09:14:14+03:00",
+      "angularJSTemplates": 341,
+      "reactFiles": 303,
+      "angularJSLines": 38576
+    },
+    {
+      "timestamp": "2022-06-07T16:42:09+08:00",
+      "angularJSTemplates": 340,
+      "reactFiles": 319,
+      "angularJSLines": 38651
+    },
+    {
+      "timestamp": "2022-06-15T16:01:19+12:00",
+      "angularJSTemplates": 340,
+      "reactFiles": 323,
+      "angularJSLines": 38654
+    },
+    {
+      "timestamp": "2022-06-22T20:11:42+03:00",
+      "angularJSTemplates": 340,
+      "reactFiles": 321,
+      "angularJSLines": 38696
+    },
+    {
+      "timestamp": "2022-06-30T08:35:32+08:00",
+      "angularJSTemplates": 334,
+      "reactFiles": 338,
+      "angularJSLines": 38866
+    },
+    {
+      "timestamp": "2022-07-07T07:29:46+03:00",
+      "angularJSTemplates": 333,
+      "reactFiles": 342,
+      "angularJSLines": 38927
+    },
+    {
+      "timestamp": "2022-07-14T21:35:37+08:00",
+      "angularJSTemplates": 333,
+      "reactFiles": 347,
+      "angularJSLines": 38975
+    },
+    {
+      "timestamp": "2022-07-21T18:47:20+02:00",
+      "angularJSTemplates": 340,
+      "reactFiles": 321,
+      "angularJSLines": 38728
+    },
+    {
+      "timestamp": "2022-07-28T19:24:25+02:00",
+      "angularJSTemplates": 329,
+      "reactFiles": 361,
+      "angularJSLines": 38998
+    },
+    {
+      "timestamp": "2022-08-05T09:30:54+12:00",
+      "angularJSTemplates": 329,
+      "reactFiles": 362,
+      "angularJSLines": 39063
+    },
+    {
+      "timestamp": "2022-08-12T02:00:33+03:00",
+      "angularJSTemplates": 328,
+      "reactFiles": 368,
+      "angularJSLines": 39096
+    },
+    {
+      "timestamp": "2022-08-19T12:55:26+12:00",
+      "angularJSTemplates": 325,
+      "reactFiles": 367,
+      "angularJSLines": 39078
+    },
+    {
+      "timestamp": "2022-08-26T17:54:03+12:00",
+      "angularJSTemplates": 325,
+      "reactFiles": 374,
+      "angularJSLines": 39073
+    },
+    {
+      "timestamp": "2022-09-02T18:30:34+03:00",
+      "angularJSTemplates": 322,
+      "reactFiles": 394,
+      "angularJSLines": 38835
+    },
+    {
+      "timestamp": "2022-09-12T17:07:03+12:00",
+      "angularJSTemplates": 322,
+      "reactFiles": 393,
+      "angularJSLines": 38964
+    },
+    {
+      "timestamp": "2022-09-19T16:52:15+08:00",
+      "angularJSTemplates": 322,
+      "reactFiles": 413,
+      "angularJSLines": 39009
+    },
+    {
+      "timestamp": "2022-09-27T08:43:24+13:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 456,
+      "angularJSLines": 39387
+    },
+    {
+      "timestamp": "2022-10-04T10:20:16+13:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 456,
+      "angularJSLines": 39414
+    },
+    {
+      "timestamp": "2022-10-11T14:05:50+13:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 456,
+      "angularJSLines": 39510
+    },
+    {
+      "timestamp": "2022-10-19T15:25:15+13:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 456,
+      "angularJSLines": 39563
+    },
+    {
+      "timestamp": "2022-10-26T11:50:57+08:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 457,
+      "angularJSLines": 39371
+    },
+    {
+      "timestamp": "2022-11-02T12:44:31+02:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 457,
+      "angularJSLines": 39397
+    },
+    {
+      "timestamp": "2022-11-10T08:28:09+13:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 457,
+      "angularJSLines": 39153
+    },
+    {
+      "timestamp": "2022-11-17T10:38:23+13:00",
+      "angularJSTemplates": 319,
+      "reactFiles": 456,
+      "angularJSLines": 39426
+    },
+    {
+      "timestamp": "2022-11-28T15:00:28+13:00",
+      "angularJSTemplates": 315,
+      "reactFiles": 497,
+      "angularJSLines": 38725
+    },
+    {
+      "timestamp": "2022-12-06T08:49:26+13:00",
+      "angularJSTemplates": 315,
+      "reactFiles": 499,
+      "angularJSLines": 38791
+    },
+    {
+      "timestamp": "2022-12-13T22:52:06+02:00",
+      "angularJSTemplates": 315,
+      "reactFiles": 519,
+      "angularJSLines": 38815
+    },
+    {
+      "timestamp": "2022-12-20T23:07:34+02:00",
+      "angularJSTemplates": 315,
+      "reactFiles": 508,
+      "angularJSLines": 38700
+    },
+    {
+      "timestamp": "2023-01-10T10:01:57+13:00",
+      "angularJSTemplates": 315,
+      "reactFiles": 508,
+      "angularJSLines": 38735
+    },
+    {
+      "timestamp": "2023-01-18T08:30:00+13:00",
+      "angularJSTemplates": 315,
+      "reactFiles": 509,
+      "angularJSLines": 38735
+    },
+    {
+      "timestamp": "2023-01-26T07:40:05+05:30",
+      "angularJSTemplates": 315,
+      "reactFiles": 513,
+      "angularJSLines": 38737
+    },
+    {
+      "timestamp": "2023-02-02T16:30:27+01:00",
+      "angularJSTemplates": 314,
+      "reactFiles": 514,
+      "angularJSLines": 38806
+    },
+    {
+      "timestamp": "2023-02-10T09:19:43+13:00",
+      "angularJSTemplates": 314,
+      "reactFiles": 527,
+      "angularJSLines": 39071
+    },
+    {
+      "timestamp": "2023-02-17T12:51:00+13:00",
+      "angularJSTemplates": 314,
+      "reactFiles": 540,
+      "angularJSLines": 38994
+    },
+    {
+      "timestamp": "2023-02-26T15:25:24+02:00",
+      "angularJSTemplates": 304,
+      "reactFiles": 562,
+      "angularJSLines": 39058
+    },
+    {
+      "timestamp": "2023-03-06T10:43:08+13:00",
+      "angularJSTemplates": 303,
+      "reactFiles": 585,
+      "angularJSLines": 38925
+    },
+    {
+      "timestamp": "2023-03-13T11:05:51+13:00",
+      "angularJSTemplates": 302,
+      "reactFiles": 589,
+      "angularJSLines": 39005
+    },
+    {
+      "timestamp": "2023-03-20T16:15:55+13:00",
+      "angularJSTemplates": 302,
+      "reactFiles": 590,
+      "angularJSLines": 39010
+    },
+    {
+      "timestamp": "2023-03-28T09:19:22+03:00",
+      "angularJSTemplates": 302,
+      "reactFiles": 590,
+      "angularJSLines": 39017
+    },
+    {
+      "timestamp": "2023-04-06T09:09:13+12:00",
+      "angularJSTemplates": 302,
+      "reactFiles": 590,
+      "angularJSLines": 39025
+    },
+    {
+      "timestamp": "2023-04-13T15:32:58+12:00",
+      "angularJSTemplates": 303,
+      "reactFiles": 590,
+      "angularJSLines": 39078
+    },
+    {
+      "timestamp": "2023-04-21T09:39:55+12:00",
+      "angularJSTemplates": 303,
+      "reactFiles": 590,
+      "angularJSLines": 39289
+    },
+    {
+      "timestamp": "2023-04-28T13:35:33+12:00",
+      "angularJSTemplates": 303,
+      "reactFiles": 591,
+      "angularJSLines": 39310
+    },
+    {
+      "timestamp": "2023-05-05T09:02:31+07:00",
+      "angularJSTemplates": 303,
+      "reactFiles": 591,
+      "angularJSLines": 39274
+    },
+    {
+      "timestamp": "2023-05-14T09:26:11+07:00",
+      "angularJSTemplates": 302,
+      "reactFiles": 599,
+      "angularJSLines": 39157
+    },
+    {
+      "timestamp": "2023-05-21T12:27:29+07:00",
+      "angularJSTemplates": 301,
+      "reactFiles": 599,
+      "angularJSLines": 39185
+    },
+    {
+      "timestamp": "2023-05-29T09:01:38+12:00",
+      "angularJSTemplates": 302,
+      "reactFiles": 590,
+      "angularJSLines": 39111
+    },
+    {
+      "timestamp": "2023-06-05T10:18:34-03:00",
+      "angularJSTemplates": 293,
+      "reactFiles": 632,
+      "angularJSLines": 38537
+    },
+    {
+      "timestamp": "2023-06-13T09:14:10+12:00",
+      "angularJSTemplates": 294,
+      "reactFiles": 653,
+      "angularJSLines": 39051
+    },
+    {
+      "timestamp": "2023-06-20T11:02:39+07:00",
+      "angularJSTemplates": 292,
+      "reactFiles": 668,
+      "angularJSLines": 38920
+    },
+    {
+      "timestamp": "2023-06-28T08:51:58+12:00",
+      "angularJSTemplates": 288,
+      "reactFiles": 681,
+      "angularJSLines": 38142
+    },
+    {
+      "timestamp": "2023-07-06T15:23:41+12:00",
+      "angularJSTemplates": 287,
+      "reactFiles": 685,
+      "angularJSLines": 38149
+    },
+    {
+      "timestamp": "2023-07-13T10:46:12+03:00",
+      "angularJSTemplates": 283,
+      "reactFiles": 703,
+      "angularJSLines": 37638
+    },
+    {
+      "timestamp": "2023-07-21T16:37:30+12:00",
+      "angularJSTemplates": 278,
+      "reactFiles": 719,
+      "angularJSLines": 37455
+    },
+    {
+      "timestamp": "2023-07-29T17:08:41+02:00",
+      "angularJSTemplates": 277,
+      "reactFiles": 723,
+      "angularJSLines": 37243
+    },
+    {
+      "timestamp": "2023-08-07T10:30:31+12:00",
+      "angularJSTemplates": 278,
+      "reactFiles": 721,
+      "angularJSLines": 37331
+    },
+    {
+      "timestamp": "2023-08-14T12:34:58+12:00",
+      "angularJSTemplates": 277,
+      "reactFiles": 731,
+      "angularJSLines": 37243
+    },
+    {
+      "timestamp": "2023-08-22T09:36:27+03:00",
+      "angularJSTemplates": 278,
+      "reactFiles": 722,
+      "angularJSLines": 37357
+    },
+    {
+      "timestamp": "2023-08-31T20:11:43+02:00",
+      "angularJSTemplates": 278,
+      "reactFiles": 722,
+      "angularJSLines": 37357
+    },
+    {
+      "timestamp": "2023-09-08T13:40:09+12:00",
+      "angularJSTemplates": 268,
+      "reactFiles": 788,
+      "angularJSLines": 36220
+    },
+    {
+      "timestamp": "2023-09-20T09:04:26+03:00",
+      "angularJSTemplates": 262,
+      "reactFiles": 802,
+      "angularJSLines": 35960
+    },
+    {
+      "timestamp": "2023-09-28T12:40:54+13:00",
+      "angularJSTemplates": 261,
+      "reactFiles": 821,
+      "angularJSLines": 35609
+    },
+    {
+      "timestamp": "2023-10-05T10:31:08+03:00",
+      "angularJSTemplates": 261,
+      "reactFiles": 822,
+      "angularJSLines": 35619
+    },
+    {
+      "timestamp": "2023-10-13T03:10:16+13:00",
+      "angularJSTemplates": 259,
+      "reactFiles": 849,
+      "angularJSLines": 35772
+    },
+    {
+      "timestamp": "2023-10-19T21:09:15+02:00",
+      "angularJSTemplates": 256,
+      "reactFiles": 872,
+      "angularJSLines": 35487
+    },
+    {
+      "timestamp": "2023-10-26T22:56:03+01:00",
+      "angularJSTemplates": 248,
+      "reactFiles": 894,
+      "angularJSLines": 35080
+    },
+    {
+      "timestamp": "2023-11-03T11:39:44+13:00",
+      "angularJSTemplates": 246,
+      "reactFiles": 862,
+      "angularJSLines": 34850
+    },
+    {
+      "timestamp": "2023-11-13T09:37:52+13:00",
+      "angularJSTemplates": 246,
+      "reactFiles": 862,
+      "angularJSLines": 34850
+    },
+    {
+      "timestamp": "2023-11-20T10:22:48+13:00",
+      "angularJSTemplates": 244,
+      "reactFiles": 892,
+      "angularJSLines": 34905
+    },
+    {
+      "timestamp": "2023-11-27T11:56:44+13:00",
+      "angularJSTemplates": 244,
+      "reactFiles": 893,
+      "angularJSLines": 35002
+    },
+    {
+      "timestamp": "2023-12-04T08:46:44+02:00",
+      "angularJSTemplates": 244,
+      "reactFiles": 893,
+      "angularJSLines": 35053
+    },
+    {
+      "timestamp": "2023-12-12T15:35:36+13:00",
+      "angularJSTemplates": 242,
+      "reactFiles": 894,
+      "angularJSLines": 34833
+    },
+    {
+      "timestamp": "2023-12-20T08:53:56+13:00",
+      "angularJSTemplates": 278,
+      "reactFiles": 722,
+      "angularJSLines": 37417
+    },
+    {
+      "timestamp": "2024-01-02T11:50:20+07:00",
+      "angularJSTemplates": 278,
+      "reactFiles": 722,
+      "angularJSLines": 37393
+    },
+    {
+      "timestamp": "2024-01-11T08:28:01+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 912,
+      "angularJSLines": 34295
+    },
+    {
+      "timestamp": "2024-01-19T09:28:09+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 916,
+      "angularJSLines": 34342
+    },
+    {
+      "timestamp": "2024-01-26T10:28:57+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 917,
+      "angularJSLines": 34146
+    },
+    {
+      "timestamp": "2024-02-05T14:24:11+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 917,
+      "angularJSLines": 34158
+    },
+    {
+      "timestamp": "2024-02-12T15:30:49+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 919,
+      "angularJSLines": 34203
+    },
+    {
+      "timestamp": "2024-02-19T16:37:21+02:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 934,
+      "angularJSLines": 34363
+    },
+    {
+      "timestamp": "2024-02-27T11:18:28+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 934,
+      "angularJSLines": 34381
+    },
+    {
+      "timestamp": "2024-03-05T19:30:45+02:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 934,
+      "angularJSLines": 34455
+    },
+    {
+      "timestamp": "2024-03-14T08:45:48+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 936,
+      "angularJSLines": 34481
+    },
+    {
+      "timestamp": "2024-03-27T16:02:25+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 937,
+      "angularJSLines": 34498
+    },
+    {
+      "timestamp": "2024-04-03T17:38:32+03:00",
+      "angularJSTemplates": 230,
+      "reactFiles": 968,
+      "angularJSLines": 33963
+    },
+    {
+      "timestamp": "2024-04-11T12:11:38+12:00",
+      "angularJSTemplates": 211,
+      "reactFiles": 1010,
+      "angularJSLines": 33200
+    },
+    {
+      "timestamp": "2024-04-18T19:14:09+12:00",
+      "angularJSTemplates": 200,
+      "reactFiles": 1046,
+      "angularJSLines": 32350
+    },
+    {
+      "timestamp": "2024-04-26T08:42:10+12:00",
+      "angularJSTemplates": 196,
+      "reactFiles": 1048,
+      "angularJSLines": 31967
+    },
+    {
+      "timestamp": "2024-05-03T09:12:37+12:00",
+      "angularJSTemplates": 196,
+      "reactFiles": 1048,
+      "angularJSLines": 31967
+    },
+    {
+      "timestamp": "2024-05-09T19:24:04-03:00",
+      "angularJSTemplates": 191,
+      "reactFiles": 1063,
+      "angularJSLines": 31244
+    },
+    {
+      "timestamp": "2024-05-17T20:00:01-03:00",
+      "angularJSTemplates": 190,
+      "reactFiles": 1065,
+      "angularJSLines": 31260
+    },
+    {
+      "timestamp": "2024-05-28T08:14:12+03:00",
+      "angularJSTemplates": 188,
+      "reactFiles": 1075,
+      "angularJSLines": 31093
+    },
+    {
+      "timestamp": "2024-06-06T21:07:39+03:00",
+      "angularJSTemplates": 180,
+      "reactFiles": 1100,
+      "angularJSLines": 29945
+    },
+    {
+      "timestamp": "2024-06-14T00:32:17+03:00",
+      "angularJSTemplates": 180,
+      "reactFiles": 1100,
+      "angularJSLines": 29512
+    },
+    {
+      "timestamp": "2024-06-25T12:14:39+12:00",
+      "angularJSTemplates": 180,
+      "reactFiles": 1101,
+      "angularJSLines": 29554
+    },
+    {
+      "timestamp": "2024-07-08T17:31:18+02:00",
+      "angularJSTemplates": 177,
+      "reactFiles": 1094,
+      "angularJSLines": 29371
+    },
+    {
+      "timestamp": "2024-07-17T14:40:05+02:00",
+      "angularJSTemplates": 177,
+      "reactFiles": 1094,
+      "angularJSLines": 29284
+    },
+    {
+      "timestamp": "2024-07-29T09:42:05+12:00",
+      "angularJSTemplates": 177,
+      "reactFiles": 1094,
+      "angularJSLines": 29284
+    },
+    {
+      "timestamp": "2024-08-10T11:53:16+02:00",
+      "angularJSTemplates": 177,
+      "reactFiles": 1094,
+      "angularJSLines": 29293
+    },
+    {
+      "timestamp": "2024-08-21T11:00:00+12:00",
+      "angularJSTemplates": 177,
+      "reactFiles": 1094,
+      "angularJSLines": 29293
+    },
+    {
+      "timestamp": "2024-08-28T18:28:38+12:00",
+      "angularJSTemplates": 177,
+      "reactFiles": 1094,
+      "angularJSLines": 29293
+    },
+    {
+      "timestamp": "2024-09-05T08:47:06+02:00",
+      "angularJSTemplates": 175,
+      "reactFiles": 1105,
+      "angularJSLines": 29291
+    },
+    {
+      "timestamp": "2024-09-19T09:40:33+12:00",
+      "angularJSTemplates": 175,
+      "reactFiles": 1105,
+      "angularJSLines": 29291
+    },
+    {
+      "timestamp": "2024-10-01T14:15:51+13:00",
+      "angularJSTemplates": 174,
+      "reactFiles": 1154,
+      "angularJSLines": 29117
+    },
+    {
+      "timestamp": "2024-10-08T19:17:09+13:00",
+      "angularJSTemplates": 174,
+      "reactFiles": 1154,
+      "angularJSLines": 29119
+    },
+    {
+      "timestamp": "2024-10-18T16:40:39+13:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 940,
+      "angularJSLines": 34160
+    },
+    {
+      "timestamp": "2024-10-31T10:12:56+13:00",
+      "angularJSTemplates": 173,
+      "reactFiles": 1153,
+      "angularJSLines": 28955
+    },
+    {
+      "timestamp": "2024-11-07T14:10:19+13:00",
+      "angularJSTemplates": 173,
+      "reactFiles": 1154,
+      "angularJSLines": 28955
+    },
+    {
+      "timestamp": "2024-11-15T11:19:33+13:00",
+      "angularJSTemplates": 172,
+      "reactFiles": 1158,
+      "angularJSLines": 28793
+    },
+    {
+      "timestamp": "2024-11-25T17:41:09+13:00",
+      "angularJSTemplates": 172,
+      "reactFiles": 1160,
+      "angularJSLines": 28794
+    },
+    {
+      "timestamp": "2024-12-03T08:45:44+13:00",
+      "angularJSTemplates": 172,
+      "reactFiles": 1160,
+      "angularJSLines": 28794
+    },
+    {
+      "timestamp": "2024-12-10T09:11:51+13:00",
+      "angularJSTemplates": 172,
+      "reactFiles": 1163,
+      "angularJSLines": 28798
+    },
+    {
+      "timestamp": "2024-12-17T19:16:41-03:00",
+      "angularJSTemplates": 239,
+      "reactFiles": 940,
+      "angularJSLines": 34180
+    },
+    {
+      "timestamp": "2025-01-10T13:21:27+13:00",
+      "angularJSTemplates": 168,
+      "reactFiles": 1194,
+      "angularJSLines": 28022
+    },
+    {
+      "timestamp": "2025-01-17T20:33:01+01:00",
+      "angularJSTemplates": 168,
+      "reactFiles": 1193,
+      "angularJSLines": 28022
+    },
+    {
+      "timestamp": "2025-01-30T15:42:32+13:00",
+      "angularJSTemplates": 168,
+      "reactFiles": 1194,
+      "angularJSLines": 28022
+    },
+    {
+      "timestamp": "2025-02-06T18:14:43+01:00",
+      "angularJSTemplates": 168,
+      "reactFiles": 1194,
+      "angularJSLines": 28028
+    },
+    {
+      "timestamp": "2025-02-26T14:13:50+13:00",
+      "angularJSTemplates": 167,
+      "reactFiles": 1199,
+      "angularJSLines": 27888
+    },
+    {
+      "timestamp": "2025-03-05T16:04:16+01:00",
+      "angularJSTemplates": 166,
+      "reactFiles": 1201,
+      "angularJSLines": 27823
+    },
+    {
+      "timestamp": "2025-03-13T12:20:16+13:00",
+      "angularJSTemplates": 166,
+      "reactFiles": 1203,
+      "angularJSLines": 27823
+    },
+    {
+      "timestamp": "2025-03-20T10:05:15+01:00",
+      "angularJSTemplates": 164,
+      "reactFiles": 1205,
+      "angularJSLines": 27759
+    },
+    {
+      "timestamp": "2025-03-28T10:52:59+13:00",
+      "angularJSTemplates": 164,
+      "reactFiles": 1207,
+      "angularJSLines": 27767
+    },
+    {
+      "timestamp": "2025-04-04T11:56:42+13:00",
+      "angularJSTemplates": 164,
+      "reactFiles": 1207,
+      "angularJSLines": 27767
+    },
+    {
+      "timestamp": "2025-04-13T23:05:48+02:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1224,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-04-22T09:52:52+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1226,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-05-12T11:18:04+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1228,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-05-22T14:27:14+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1250,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-06-05T10:14:39+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1251,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-06-18T09:06:58+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1258,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-06-27T09:38:04+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1258,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-07-04T10:07:57+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1259,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-07-11T11:01:37+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1260,
+      "angularJSLines": 27548
+    },
+    {
+      "timestamp": "2025-07-21T15:05:04+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1262,
+      "angularJSLines": 27556
+    },
+    {
+      "timestamp": "2025-07-28T15:41:12+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1269,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2025-08-04T17:10:46+02:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1269,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2025-08-12T10:23:27+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1273,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2025-08-19T16:55:24+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1276,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2025-09-01T10:25:53+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1277,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2025-09-08T22:51:32+12:00",
+      "angularJSTemplates": 162,
+      "reactFiles": 1287,
+      "angularJSLines": 27120
+    },
+    {
+      "timestamp": "2025-09-19T14:45:14+12:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1277,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2025-10-10T09:23:47+13:00",
+      "angularJSTemplates": 162,
+      "reactFiles": 1289,
+      "angularJSLines": 27120
+    },
+    {
+      "timestamp": "2025-10-20T09:33:07+13:00",
+      "angularJSTemplates": 162,
+      "reactFiles": 1293,
+      "angularJSLines": 27136
+    },
+    {
+      "timestamp": "2025-10-30T16:43:15+13:00",
+      "angularJSTemplates": 161,
+      "reactFiles": 1299,
+      "angularJSLines": 27103
+    },
+    {
+      "timestamp": "2025-11-08T10:13:00+13:00",
+      "angularJSTemplates": 160,
+      "reactFiles": 1310,
+      "angularJSLines": 27027
+    },
+    {
+      "timestamp": "2025-11-16T09:55:00+02:00",
+      "angularJSTemplates": 159,
+      "reactFiles": 1323,
+      "angularJSLines": 26722
+    },
+    {
+      "timestamp": "2025-11-24T16:30:03+02:00",
+      "angularJSTemplates": 159,
+      "reactFiles": 1326,
+      "angularJSLines": 26561
+    },
+    {
+      "timestamp": "2025-12-02T09:32:03+13:00",
+      "angularJSTemplates": 158,
+      "reactFiles": 1342,
+      "angularJSLines": 26383
+    },
+    {
+      "timestamp": "2025-12-09T08:05:38+09:00",
+      "angularJSTemplates": 158,
+      "reactFiles": 1343,
+      "angularJSLines": 26383
+    },
+    {
+      "timestamp": "2025-12-17T13:02:19+02:00",
+      "angularJSTemplates": 156,
+      "reactFiles": 1358,
+      "angularJSLines": 25842
+    },
+    {
+      "timestamp": "2025-12-24T16:41:37+02:00",
+      "angularJSTemplates": 156,
+      "reactFiles": 1357,
+      "angularJSLines": 25662
+    },
+    {
+      "timestamp": "2025-12-31T18:52:58+02:00",
+      "angularJSTemplates": 154,
+      "reactFiles": 1401,
+      "angularJSLines": 25456
+    },
+    {
+      "timestamp": "2026-01-07T19:52:41+01:00",
+      "angularJSTemplates": 163,
+      "reactFiles": 1278,
+      "angularJSLines": 27580
+    },
+    {
+      "timestamp": "2026-01-16T14:38:28+01:00",
+      "angularJSTemplates": 152,
+      "reactFiles": 1436,
+      "angularJSLines": 24884
+    },
+    {
+      "timestamp": "2026-01-26T23:08:57+05:30",
+      "angularJSTemplates": 152,
+      "reactFiles": 1444,
+      "angularJSLines": 24884
+    },
+    {
+      "timestamp": "2026-02-04T08:39:17+13:00",
+      "angularJSTemplates": 150,
+      "reactFiles": 1454,
+      "angularJSLines": 24951
+    },
+    {
+      "timestamp": "2026-02-11T15:14:04Z",
+      "angularJSTemplates": 149,
+      "reactFiles": 1464,
+      "angularJSLines": 24604
+    },
+    {
+      "timestamp": "2026-02-19T08:37:02+13:00",
+      "angularJSTemplates": 149,
+      "reactFiles": 1469,
+      "angularJSLines": 24604
+    },
+    {
+      "timestamp": "2026-02-26T10:52:39+02:00",
+      "angularJSTemplates": 149,
+      "reactFiles": 1471,
+      "angularJSLines": 24602
+    },
+    {
+      "timestamp": "2026-03-06T15:00:01+01:00",
+      "angularJSTemplates": 148,
+      "reactFiles": 1477,
+      "angularJSLines": 24607
+    },
+    {
+      "timestamp": "2026-03-15T11:22:09+02:00",
+      "angularJSTemplates": 148,
+      "reactFiles": 1489,
+      "angularJSLines": 24922
+    },
+    {
+      "timestamp": "2026-03-23T09:22:56+13:00",
+      "angularJSTemplates": 146,
+      "reactFiles": 1510,
+      "angularJSLines": 24927
+    },
+    {
+      "timestamp": "2026-03-30T14:54:50+03:00",
+      "angularJSTemplates": 145,
+      "reactFiles": 1508,
+      "angularJSLines": 24837
+    },
+    {
+      "timestamp": "2026-04-06T16:55:06+03:00",
+      "angularJSTemplates": 145,
+      "reactFiles": 1508,
+      "angularJSLines": 24837
+    },
+    {
+      "timestamp": "2026-04-14T08:28:44+12:00",
+      "angularJSTemplates": 144,
+      "reactFiles": 1524,
+      "angularJSLines": 24783
+    },
+    {
+      "timestamp": "2026-04-21T09:47:52+03:00",
+      "angularJSTemplates": 144,
+      "reactFiles": 1535,
+      "angularJSLines": 24950
+    },
+    {
+      "timestamp": "2026-04-29T14:59:39+12:00",
+      "angularJSTemplates": 143,
+      "reactFiles": 1586,
+      "angularJSLines": 24772
+    },
+    {
+      "timestamp": "2026-05-07T14:15:21+12:00",
+      "angularJSTemplates": 142,
+      "reactFiles": 1601,
+      "angularJSLines": 24764
+    },
+    {
+      "timestamp": "2026-05-16T11:09:03+12:00",
+      "angularJSTemplates": 140,
+      "reactFiles": 1617,
+      "angularJSLines": 24550
+    }
+  ]
+}
