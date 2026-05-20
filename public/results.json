@@ -1,0 +1,189 @@
+{
+  "timestamp": "2026-05-20T14:07:40.849Z",
+  "source": "local",
+  "summary": {
+    "totalAngularJSTemplates": 140,
+    "totalReactFiles": 1636,
+    "totalAngularJSLines": 24621
+  },
+  "byModule": {
+    "__mocks__": {
+      "angularJSFiles": 0,
+      "reactFiles": 2
+    },
+    "agent": {
+      "angularJSFiles": 16,
+      "reactFiles": 0
+    },
+    ".": {
+      "angularJSFiles": 3,
+      "reactFiles": 0
+    },
+    "assets": {
+      "angularJSFiles": 0,
+      "reactFiles": 0
+    },
+    "azure": {
+      "angularJSFiles": 1,
+      "reactFiles": 0
+    },
+    "docker": {
+      "angularJSFiles": 60,
+      "reactFiles": 0
+    },
+    "edge": {
+      "angularJSFiles": 5,
+      "reactFiles": 0
+    },
+    "kubernetes": {
+      "angularJSFiles": 68,
+      "reactFiles": 0
+    },
+    "portainer": {
+      "angularJSFiles": 141,
+      "reactFiles": 0
+    },
+    "react/azure": {
+      "angularJSFiles": 0,
+      "reactFiles": 15
+    },
+    "react/common": {
+      "angularJSFiles": 0,
+      "reactFiles": 8
+    },
+    "react/components": {
+      "angularJSFiles": 0,
+      "reactFiles": 349
+    },
+    "react": {
+      "angularJSFiles": 0,
+      "reactFiles": 0
+    },
+    "react/docker": {
+      "angularJSFiles": 0,
+      "reactFiles": 269
+    },
+    "react/edge": {
+      "angularJSFiles": 0,
+      "reactFiles": 114
+    },
+    "react/hooks": {
+      "angularJSFiles": 0,
+      "reactFiles": 14
+    },
+    "react/kubernetes": {
+      "angularJSFiles": 0,
+      "reactFiles": 387
+    },
+    "react/portainer": {
+      "angularJSFiles": 4,
+      "reactFiles": 433
+    },
+    "react/sidebar": {
+      "angularJSFiles": 1,
+      "reactFiles": 34
+    },
+    "react/test-utils": {
+      "angularJSFiles": 0,
+      "reactFiles": 3
+    },
+    "react/utils": {
+      "angularJSFiles": 0,
+      "reactFiles": 0
+    },
+    "react-tools": {
+      "angularJSFiles": 2,
+      "reactFiles": 7
+    },
+    "setup-tests": {
+      "angularJSFiles": 0,
+      "reactFiles": 1
+    },
+    "types": {
+      "angularJSFiles": 0,
+      "reactFiles": 0
+    }
+  },
+  "mostChangedHtmlFiles": [
+    {
+      "path": "app/kubernetes/views/applications/create/createApplication.html",
+      "commitCount": 128
+    },
+    {
+      "path": "app/kubernetes/views/deploy/deploy.html",
+      "commitCount": 69
+    },
+    {
+      "path": "app/portainer/views/settings/authentication/settingsAuthentication.html",
+      "commitCount": 41
+    },
+    {
+      "path": "app/portainer/views/auth/auth.html",
+      "commitCount": 37
+    },
+    {
+      "path": "app/docker/views/images/build/buildimage.html",
+      "commitCount": 35
+    },
+    {
+      "path": "app/portainer/views/init/admin/initAdmin.html",
+      "commitCount": 34
+    },
+    {
+      "path": "app/docker/views/services/create/createservice.html",
+      "commitCount": 32
+    },
+    {
+      "path": "app/docker/views/services/edit/service.html",
+      "commitCount": 29
+    },
+    {
+      "path": "app/index.html",
+      "commitCount": 28
+    },
+    {
+      "path": "app/docker/views/images/edit/image.html",
+      "commitCount": 28
+    },
+    {
+      "path": "app/kubernetes/views/volumes/edit/volume.html",
+      "commitCount": 26
+    },
+    {
+      "path": "app/portainer/views/account/account.html",
+      "commitCount": 25
+    },
+    {
+      "path": "app/kubernetes/components/kubernetes-configuration-data/kubernetesConfigurationData.html",
+      "commitCount": 25
+    },
+    {
+      "path": "app/docker/views/services/edit/includes/mounts.html",
+      "commitCount": 24
+    },
+    {
+      "path": "app/docker/views/volumes/edit/volume.html",
+      "commitCount": 22
+    },
+    {
+      "path": "app/portainer/oauth/components/oauth-settings/oauth-settings.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/portainer/components/forms/group-form/groupForm.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/portainer/components/accessManagement/porAccessManagement.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/docker/components/log-viewer/logViewer.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/docker/components/imageRegistry/por-image-registry.html",
+      "commitCount": 21
+    }
+  ]
+}
