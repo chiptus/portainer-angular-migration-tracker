@@ -6,6 +6,7 @@ export interface ModuleStats {
 export interface Summary {
 	totalAngularJSTemplates: number;
 	totalReactFiles: number;
+	totalAngularJSLines: number;
 }
 
 export interface HtmlFileChange {
@@ -17,6 +18,7 @@ export interface HistorySnapshot {
 	timestamp: string;
 	angularJSTemplates: number;
 	reactFiles: number;
+	angularJSLines?: number;
 }
 
 export interface HistoryData {

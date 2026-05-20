@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import StatsCards from "./components/StatsCards";
 import MigrationProgress from "./components/MigrationProgress";
 import HistoryChart from "./components/HistoryChart";
+import HistoryLinesChart from "./components/HistoryLinesChart";
 import ModuleBreakdown from "./components/ModuleBreakdown";
 import MostChangedFiles from "./components/MostChangedFiles";
 import LoadingState from "./components/LoadingState";
@@ -79,6 +80,7 @@ function App() {
 						<StatsCards summary={data.summary} />
 						<MigrationProgress summary={data.summary} />
 						{history && <HistoryChart history={history} />}
+						{history && <HistoryLinesChart history={history} />}
 						{data.byModule && <ModuleBreakdown byModule={data.byModule} />}
 						{data.mostChangedHtmlFiles &&
 							data.mostChangedHtmlFiles.length > 0 && (

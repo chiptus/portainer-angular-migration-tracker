@@ -85,5 +85,6 @@ export function analyzeFileContent(
 
 	if (isAngularFile && !isReactBridge) {
 		results.byModule[module].angularJSFiles++;
+		results.summary.totalAngularJSLines += content.split("\n").length;
 	}
 }

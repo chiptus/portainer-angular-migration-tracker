@@ -15,6 +15,7 @@ export function createResults(source: "local" | "github"): Results {
 		summary: {
 			totalAngularJSTemplates: 0,
 			totalReactFiles: 0,
+			totalAngularJSLines: 0,
 		},
 		byModule: {},
 		mostChangedHtmlFiles: undefined,

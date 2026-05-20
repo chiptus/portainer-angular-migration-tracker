@@ -54,6 +54,7 @@ function analyzeCommit(
 			timestamp,
 			angularJSTemplates: results.summary.totalAngularJSTemplates,
 			reactFiles: results.summary.totalReactFiles,
+			angularJSLines: results.summary.totalAngularJSLines,
 		};
 	} catch (error) {
 		console.warn(
