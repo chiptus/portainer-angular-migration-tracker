@@ -113,7 +113,7 @@ export function generateHistoryFromGit(
 
 		// Get list of commits
 		const gitLog = execSync(
-			`git log --since="${sinceDate}" --format="%H %aI" --all --no-merges -- app`,
+			`git log --since="${sinceDate}" --format="%H %aI" develop --no-merges -- app`,
 			{ cwd: portainerRepoPath, encoding: "utf8" },
 		);
 
