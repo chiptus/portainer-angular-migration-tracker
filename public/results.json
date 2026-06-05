@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-04T03:44:38.458Z",
+  "timestamp": "2026-06-05T03:31:57.878Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 140,
     "totalReactFiles": 1654,
-    "totalAngularJSLines": 24624
+    "totalAngularJSLines": 24637
   },
   "byModule": {
     "__mocks__": {
@@ -122,12 +122,12 @@
       "commitCount": 37
     },
     {
-      "path": "app/docker/views/images/build/buildimage.html",
+      "path": "app/portainer/views/init/admin/initAdmin.html",
       "commitCount": 35
     },
     {
-      "path": "app/portainer/views/init/admin/initAdmin.html",
-      "commitCount": 34
+      "path": "app/docker/views/images/build/buildimage.html",
+      "commitCount": 35
     },
     {
       "path": "app/docker/views/services/create/createservice.html",
