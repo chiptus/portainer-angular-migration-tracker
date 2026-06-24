@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-23T02:56:43.791Z",
+  "timestamp": "2026-06-24T02:57:36.999Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 139,
-    "totalReactFiles": 1681,
-    "totalAngularJSLines": 24284
+    "totalReactFiles": 1682,
+    "totalAngularJSLines": 24276
   },
   "byModule": {
     "__mocks__": {
@@ -77,7 +77,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 461
+      "reactFiles": 462
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -123,7 +123,7 @@
     },
     {
       "path": "app/portainer/views/init/admin/initAdmin.html",
-      "commitCount": 35
+      "commitCount": 36
     },
     {
       "path": "app/docker/views/images/build/buildimage.html",
