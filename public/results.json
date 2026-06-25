@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-24T02:57:36.999Z",
+  "timestamp": "2026-06-25T02:56:45.805Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 139,
-    "totalReactFiles": 1682,
-    "totalAngularJSLines": 24276
+    "totalReactFiles": 1683,
+    "totalAngularJSLines": 24273
   },
   "byModule": {
     "__mocks__": {
@@ -77,7 +77,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 462
+      "reactFiles": 463
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -162,12 +162,12 @@
       "commitCount": 24
     },
     {
-      "path": "app/docker/views/volumes/edit/volume.html",
+      "path": "app/portainer/oauth/components/oauth-settings/oauth-settings.html",
       "commitCount": 22
     },
     {
-      "path": "app/portainer/oauth/components/oauth-settings/oauth-settings.html",
-      "commitCount": 21
+      "path": "app/docker/views/volumes/edit/volume.html",
+      "commitCount": 22
     },
     {
       "path": "app/portainer/components/forms/group-form/groupForm.html",
