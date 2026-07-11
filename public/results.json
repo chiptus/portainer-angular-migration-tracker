@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-04T02:38:59.339Z",
+  "timestamp": "2026-07-11T02:25:13.545Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 139,
-    "totalReactFiles": 1685,
-    "totalAngularJSLines": 24235
+    "totalReactFiles": 1693,
+    "totalAngularJSLines": 24249
   },
   "byModule": {
     "__mocks__": {
@@ -77,7 +77,7 @@
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 463
+      "reactFiles": 471
     },
     "react/sidebar": {
       "angularJSFiles": 1,
