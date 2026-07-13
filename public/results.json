@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-11T02:25:13.545Z",
+  "timestamp": "2026-07-13T02:32:05.439Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 139,
-    "totalReactFiles": 1693,
-    "totalAngularJSLines": 24249
+    "totalAngularJSTemplates": 138,
+    "totalReactFiles": 1694,
+    "totalAngularJSLines": 24324
   },
   "byModule": {
     "__mocks__": {
@@ -53,7 +53,7 @@
     },
     "react/components": {
       "angularJSFiles": 0,
-      "reactFiles": 365
+      "reactFiles": 364
     },
     "react": {
       "angularJSFiles": 0,
@@ -61,7 +61,7 @@
     },
     "react/docker": {
       "angularJSFiles": 0,
-      "reactFiles": 269
+      "reactFiles": 271
     },
     "react/edge": {
       "angularJSFiles": 0,
@@ -178,11 +178,11 @@
       "commitCount": 21
     },
     {
-      "path": "app/docker/components/log-viewer/logViewer.html",
+      "path": "app/docker/views/networks/create/createnetwork.html",
       "commitCount": 21
     },
     {
-      "path": "app/docker/components/imageRegistry/por-image-registry.html",
+      "path": "app/docker/components/log-viewer/logViewer.html",
       "commitCount": 21
     }
   ]
