@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-15T02:09:28.408Z",
+  "timestamp": "2026-07-16T02:22:52.294Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 138,
-    "totalReactFiles": 1693,
-    "totalAngularJSLines": 24324
+    "totalAngularJSTemplates": 137,
+    "totalReactFiles": 1694,
+    "totalAngularJSLines": 24296
   },
   "byModule": {
     "__mocks__": {
@@ -36,11 +36,11 @@
       "reactFiles": 0
     },
     "kubernetes": {
-      "angularJSFiles": 68,
-      "reactFiles": 0
+      "angularJSFiles": 69,
+      "reactFiles": 1
     },
     "portainer": {
-      "angularJSFiles": 137,
+      "angularJSFiles": 136,
       "reactFiles": 0
     },
     "react/azure": {
@@ -73,11 +73,11 @@
     },
     "react/kubernetes": {
       "angularJSFiles": 0,
-      "reactFiles": 388
+      "reactFiles": 386
     },
     "react/portainer": {
       "angularJSFiles": 4,
-      "reactFiles": 471
+      "reactFiles": 473
     },
     "react/sidebar": {
       "angularJSFiles": 1,
@@ -170,10 +170,6 @@
       "commitCount": 22
     },
     {
-      "path": "app/portainer/components/forms/group-form/groupForm.html",
-      "commitCount": 21
-    },
-    {
       "path": "app/portainer/components/accessManagement/porAccessManagement.html",
       "commitCount": 21
     },
@@ -183,6 +179,10 @@
     },
     {
       "path": "app/docker/components/log-viewer/logViewer.html",
+      "commitCount": 21
+    },
+    {
+      "path": "app/docker/components/imageRegistry/por-image-registry.html",
       "commitCount": 21
     }
   ]
