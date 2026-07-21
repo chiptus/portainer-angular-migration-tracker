@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-16T02:22:52.294Z",
+  "timestamp": "2026-07-21T02:26:06.680Z",
   "source": "local",
   "summary": {
-    "totalAngularJSTemplates": 137,
-    "totalReactFiles": 1694,
-    "totalAngularJSLines": 24296
+    "totalAngularJSTemplates": 134,
+    "totalReactFiles": 1703,
+    "totalAngularJSLines": 23471
   },
   "byModule": {
     "__mocks__": {
@@ -28,7 +28,7 @@
       "reactFiles": 0
     },
     "docker": {
-      "angularJSFiles": 60,
+      "angularJSFiles": 59,
       "reactFiles": 0
     },
     "edge": {
@@ -36,11 +36,11 @@
       "reactFiles": 0
     },
     "kubernetes": {
-      "angularJSFiles": 69,
+      "angularJSFiles": 68,
       "reactFiles": 1
     },
     "portainer": {
-      "angularJSFiles": 136,
+      "angularJSFiles": 135,
       "reactFiles": 0
     },
     "react/azure": {
@@ -53,7 +53,7 @@
     },
     "react/components": {
       "angularJSFiles": 0,
-      "reactFiles": 364
+      "reactFiles": 367
     },
     "react": {
       "angularJSFiles": 0,
@@ -61,7 +61,7 @@
     },
     "react/docker": {
       "angularJSFiles": 0,
-      "reactFiles": 271
+      "reactFiles": 273
     },
     "react/edge": {
       "angularJSFiles": 0,
@@ -73,7 +73,7 @@
     },
     "react/kubernetes": {
       "angularJSFiles": 0,
-      "reactFiles": 386
+      "reactFiles": 390
     },
     "react/portainer": {
       "angularJSFiles": 4,
