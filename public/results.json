@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-21T02:26:06.680Z",
+  "timestamp": "2026-07-24T02:26:47.316Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 134,
-    "totalReactFiles": 1703,
-    "totalAngularJSLines": 23471
+    "totalReactFiles": 1704,
+    "totalAngularJSLines": 23478
   },
   "byModule": {
     "__mocks__": {
@@ -73,7 +73,7 @@
     },
     "react/kubernetes": {
       "angularJSFiles": 0,
-      "reactFiles": 390
+      "reactFiles": 391
     },
     "react/portainer": {
       "angularJSFiles": 4,
@@ -147,7 +147,7 @@
     },
     {
       "path": "app/kubernetes/views/volumes/edit/volume.html",
-      "commitCount": 26
+      "commitCount": 27
     },
     {
       "path": "app/portainer/views/account/account.html",
