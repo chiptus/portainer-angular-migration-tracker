@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-06T02:20:31.108Z",
+  "timestamp": "2026-08-09T01:25:14.650Z",
   "source": "local",
   "summary": {
     "totalAngularJSTemplates": 134,
     "totalReactFiles": 1706,
-    "totalAngularJSLines": 23489
+    "totalAngularJSLines": 23490
   },
   "byModule": {
     "__mocks__": {
